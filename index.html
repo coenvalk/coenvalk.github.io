@@ -20,108 +20,127 @@
      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
      SOFTWARE.
-
-     did this work?
    -->
 <meta charset="UTF-8">
 <html>
-  <head>
-    <style>
-      body {
-        background-color:#AAEEAA;
-      }
+    <head>
+	<style>
+	 body {
+             background-color:#AAEEAA;
+	 }
 
-      #body {
-        margin: auto;
-	width: 50%;
-        padding: 10px;
-	background-color: #FFFFFF;
-      }
+	 #body {
+             margin: auto;
+	     width: 50%;
+             padding: 10px;
+	     background-color: #FFFFFF;
+	 }
 
-      p {
-        text-indent:50px;
-      }
+	 p {
+             text-indent:50px;
+	 }
 
-    </style>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" language="javascript">
-      // hey bro, get your own api key! (it's free!)
-      /*
-        https://api.nasa.gov/
-      */
-      var url = "https://api.nasa.gov/planetary/apod?api_key=O3qKVKu0YoZNNpf1UKgPBTzRiakk5MRwL3U5PW77";
-      $.ajax({
-        url: url,
-        success: function(result){
-	  if("copyright" in result) {
-	    $("#copyright").text("Image Credits: " + result.copyright);
-	  } else {
-	    $("#copyright").text("Image Credits: " + "Public Domain");
-	  }
-	 
-	  if(result.media_type == "video") {
-	    $("#apod_img_id").css("display", "none");
-	    $("#apod_vid_id").attr("src", result.url);
-	  } else {
-	    $("#apod_vid_id").css("display", "none"); 
-	    $("#apod_img_id").attr("src", result.url);
-	  }
-	  $("#returnObject").text(JSON.stringify(result, null, 4));  
-	  $("#apod_explaination").text(result.explanation);
-	  $("#apod_title").text(result.title);
-        }
-      });
-    </script>
-    <title>Coen Valk</title>
-  </head>
-  <body>
-    <div id = "body">
-      <div id = "header">
-        <h1 style="text-align:center;" >
-	  Coen Valk
-	</h1>
-	<h2 style = "text-align:center;" >
-	  RPI Computer Science 2020
-	</h2>
-      </div>
-      <hr>
-      <div>
-	<p>
-	  Hello, I am a Sophomore computer science major at RPI.
-          I am also involved in Partial Credit acapella and
-	  Upsilon chapter of ΔTΔ fraternity. Here I might post
-          projects and other things I'm working on. Please
-          forgive me if something is up here one day and is gone
-          the next.
-	</p>
-        <a class="github-button" href="https://github.com/coenvalk" data-size="large" aria-label="Follow @coenvalk on GitHub">Follow @coenvalk</a>
-        <div id="NASA">
-          <h2>I like NASA. Here's something cool from NASA:</h2>
-	  <br />
-          <div id="NASA_CONTENT" style="width:75%; margin:auto">
-	    <img id="apod_img_id" width="100%"/>
-	    <iframe id="apod_vid_id" type="text/html" width="100%" frameborder="0"></iframe>
-	    <br />
-	    <a id="copyright"></a>
-          </div>
-	  <h3 id="apod_title"></h3>
-	  <p id="apod_explaination"></p>
-        </div>
-	<h2 style = "text-align:center;" >
-	  Contact
-	</h2>
-	<a style = "font-weight: bold;">
-	  Name: Coen Valk<br />
-	  School Email: valkc@rpi.edu<br />
-	  Personal Email: clcjvalk@gmail.com<br />
-	  Phone Number: 281-658-1842<br />
-	</a>
-      </div>
-      <hr>
-      <div id = "footer" style="width: 100%; text-align:center;" >
-        <a href="http://homepages.rpi.edu/~valkc/">Coen Valk</a>
-      </div>
-    </div>
-  </body>
+	</style>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript">
+	 // hey bro, get your own api key! (it's free!)
+	 /*
+            https://api.nasa.gov/
+	  */
+	 var url = "https://api.nasa.gov/planetary/apod?api_key=O3qKVKu0YoZNNpf1UKgPBTzRiakk5MRwL3U5PW77";
+	 $.ajax({
+             url: url,
+             success: function(result){
+		 if("copyright" in result) {
+		     $("#copyright").text("Image Credits: " + result.copyright);
+		 } else {
+		     $("#copyright").text("Image Credits: " + "Public Domain");
+		 }
+		 
+		 if(result.media_type == "video") {
+		     $("#apod_img_id").css("display", "none");
+		     $("#apod_vid_id").attr("src", result.url);
+		 } else {
+		     $("#apod_vid_id").css("display", "none"); 
+		     $("#apod_img_id").attr("src", result.url);
+		 }
+		 $("#returnObject").text(JSON.stringify(result, null, 4));  
+		 $("#apod_explaination").text(result.explanation);
+		 $("#apod_title").text(result.title);
+             }
+	 });
+	</script>
+	<title>Coen Valk</title>
+    </head>
+    <body>
+	<div id = "body">
+	    <div id = "header">
+		<h1 style="text-align:center;" >
+		    Coen Valk
+		</h1>
+		<h2 style = "text-align:center;" >
+		    RPI Computer Science 2020
+		</h2>
+	    </div>
+	    <hr>
+	    <div>
+		<p>
+		    Hello, I am a Sophomore computer science major at RPI.
+		    I am also involved in Partial Credit acapella and
+		    Upsilon chapter of ΔTΔ fraternity. Here I might post
+		    projects and other things I'm working on. Please
+		    forgive me if something is up here one day and is gone
+		    the next. My full resume can be seen
+		    <a href="https://s3.amazonaws.com/symp.csm.usprod/rpi/files/4cb/4cb5f37611b48db2c97803b641cf0e3b.pdf" target="_blank">here.</a>
+		</p>
+		<a class="github-button" href="https://github.com/coenvalk" data-size="large" aria-label="Follow @coenvalk on GitHub">Follow @coenvalk</a>
+		<h2>Projects:</h2>
+		<ul>
+		    <li>
+			<a href="http://dyscalculiatesting.com" target="_blank">Dyscalculia Test:</a>
+			<p>
+			    Creating a math test that sends the user a comprehensive report in pdf 
+			    form about the test taker’s math level. This project is finished and helps to give information 
+			    about math deficiencies for people that cannot be tested in person. Follow-up assignment 
+			    developing an admin panel for client to view statistics on all test takers. Languages used are 
+			    Javascript, PHP, and MYSQLi. Free or open source software used is fpdf and p5.js.
+			</p>
+		    </li>
+		    <li>
+			<a href="http://projecteuler.net" target="_blank">Project Euler:</a>
+			<br />
+			<p>
+			    <img src="https://projecteuler.net/profile/coenvalk.png"/>
+			</p>
+		    </li>
+		</ul>
+		<div id="NASA">
+		    <h2>I like NASA. Here's something cool from NASA:</h2>
+		    <br />
+		    <div id="NASA_CONTENT" style="width:75%; margin:auto">
+			<img id="apod_img_id" width="100%"/>
+			<iframe id="apod_vid_id" type="text/html" width="100%" frameborder="0"></iframe>
+			<br />
+			<a id="copyright"></a>
+		    </div>
+		    <h3 id="apod_title"></h3>
+		    <p id="apod_explaination"></p>
+		</div>
+		<h2 style = "text-align:center;" >
+		    Contact
+		</h2>
+		<a style = "font-weight: bold;">
+		    Name: Coen Valk<br />
+		    School Email: valkc@rpi.edu<br />
+		    Personal Email: clcjvalk@gmail.com<br />
+		    Phone Number: 281-658-1842<br />
+		</a>
+	    </div>
+	    <hr>
+	    <div id = "footer" style="width: 100%; text-align:center;" >
+		<a href="http://homepages.rpi.edu/~valkc/">Coen Valk</a>
+	    </div>
+	</div>
+    </body>
 </html>
