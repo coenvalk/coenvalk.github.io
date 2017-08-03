@@ -27,6 +27,8 @@
 	<style>
 	 body {
              background-color:#AAEEAA;
+	     font-family: "Arial Black", Gadget, sans-serif;
+	     font-size: 18px;
 	 }
 
 	 @media screen and (orientation: portrait) {
@@ -39,7 +41,7 @@
 	 @media screen and (orientation: landscape) {
 	     #body {
 		 margin: auto;
-		 width: 50%;
+		 width: 800px;
 	     }
 	 }
 	 
@@ -68,12 +70,13 @@
 	</style>
 	<script async defer src="https://buttons.github.io/buttons.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" language="javascript">
+	<script async defer type="text/javascript" language="javascript">
 	 // hey bro, get your own api key! (it's free!)
 	 /*
             https://api.nasa.gov/
 	  */
 	 var url = "https://api.nasa.gov/planetary/apod?api_key=O3qKVKu0YoZNNpf1UKgPBTzRiakk5MRwL3U5PW77";
+	 
 	 $.ajax({
              url: url,
              success: function(result){
