@@ -1,5 +1,6 @@
 ---
-layout: home
+title: Coen Valk
+layout: page
 ---
 
 # Coen Valk
