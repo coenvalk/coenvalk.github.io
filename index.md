@@ -1,6 +1,5 @@
 ---
-title: Coen Valk
-layout: post
+layout: default
 ---
 
 # Coen Valk
