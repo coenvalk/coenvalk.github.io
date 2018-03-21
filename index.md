@@ -2,7 +2,7 @@
 layout: default
 ---
 
-#Home
+# Home
 
 Hello, I am a Sophomore computer science major at RPI.
 I am the secretary of Partial Credit acapella and the
