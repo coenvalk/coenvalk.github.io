@@ -1,6 +1,6 @@
 ---
 title: Coen Valk
-layout: page
+layout: post
 ---
 
 # Coen Valk
