@@ -25,7 +25,7 @@
 
 - <a href="https://github.com/coenvalk/Prime-Factorization" target="_blank">Prime Factorization</a>
 
-  - ​
+  - ​a prime factorization program that can find the prime factorization of a number and the prime factorizations of all values below a given number written in C.
 
 - <a href="https://www.hackerrank.com/clcjvalk" target="_blank">HackerRank:</a>
 
