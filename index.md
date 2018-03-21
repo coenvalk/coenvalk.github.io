@@ -23,4 +23,4 @@ My full resume can be seen <a href="https://s3.amazonaws.com/symp.csm.usprod/rpi
 
 **Phone Number: 281-658-1842**
 
-## [Portfolio](portfolio.html)
+## [Portfolio](https://coenvalk.github.io/portfolio.html)
