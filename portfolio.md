@@ -30,3 +30,5 @@
 - <a href="https://www.hackerrank.com/clcjvalk" target="_blank">HackerRank:</a>
 
   - Occasionally solving challenges and participating in competitions.
+
+[home](https://coenvalk.github.io/index.html)
