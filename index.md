@@ -4,7 +4,7 @@ layout: default
 
 # Home
 
-Hello, I am a Sophomore computer science major at RPI.
+Hello, I am a Junior computer science major at RPI.
 I am the secretary of Partial Credit acapella and the
 President of Upsilon chapter of
 ΔTΔ fraternity. This is my personal website. Here I
