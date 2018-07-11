@@ -33,6 +33,14 @@ Phone: 281-658-1842 <br/> Email: valkc@rpi.edu <br/> School Address: 133 Sunset 
 - Updated company software from VB6 to VB.NET.
 - Created add-ons for Arc-GIS. focused on parsing large real world datasets.
 
+## Competencies
+
+| Advanced  |   Good     | Moderate |     Basic  |
+|-----------|------------|----------|------------|
+|     C++   |   Python   |   Java   | TensorFlow |
+|   C       | Javascript |   PHP    |   MATLAB   |
+| Ubuntu Bash |     HTML | Git Version Control | VB.NET |
+
 ## Current Campus Involvement
 
 President - ΔTΔ Fraternity <br/> Secretary - Partial Credit A Cappella <br/> CSCI 1200 Data Structures Undergraduate Mentor
