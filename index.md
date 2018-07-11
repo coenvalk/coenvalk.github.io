@@ -10,7 +10,7 @@ Phone: 281-658-1842 <br/> Email: valkc@rpi.edu <br/> School Address: 133 Sunset 
 
 ## Education
 
-### Rensselaer Polytechnic Institute (RPI), Troy, New York
+### **Rensselaer Polytechnic Institute (RPI)**, Troy, New York
 #### **B.S. Computer Science, Cumulative GPA: 3.33**
 #### **Awards and Honors:**
 - **Dean's Honor List:** Fall 2016, Spring 2018
