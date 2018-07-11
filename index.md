@@ -38,7 +38,7 @@ Phone: 281-658-1842 <br/> Email: valkc@rpi.edu <br/> School Address: 133 Sunset 
 - Languages used: Javascript, PHP, and MYSQLi. Software libraries: fpdf and p5.js.
 - Test is deployed and constantly maintained.
 
-### **Priemere Geotechnology** (Houston Tx) - Intern, *05/20/2013 – 08/15/2014*
+### **Priemere Geotechnology** (Houston, Tx) - Intern, *05/20/2013 – 08/15/2014*
 
 - Updated company software from VB6 to VB.NET.
 - Created add-ons for Arc-GIS. focused on parsing large real world datasets.
