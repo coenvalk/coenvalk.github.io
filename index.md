@@ -8,27 +8,37 @@ layout: default
 
 Phone: 281-658-1842 <br/> Email: valkc@rpi.edu <br/> School Address: 133 Sunset Terrace, Troy Ny 12180
 
+## Education
+
+### Rensselaer Polytechnic Institute (RPI), Troy, New York
+#### **B.S. Computer Science, Cumulative GPA: 3.33**
+#### **Awards and Honors:**
+- **Dean's Honor List:** Fall 2016, Spring 2018
+- **Order of Omega Greek Honors Society**
+- **Dr. Heinrich Medicus Scholarship Recipient**
+
 ## Professional Experience
 
-**Noblis Inc.** (Reston, Va) - Machine Learning Lab Intern, *06/04/2018 - 08/10/2018*
+### **Noblis Inc.** (Reston, Va) - Machine Learning Lab Intern, *06/04/2018 - 08/10/2018*
 
-- Collaborated in an agile software development team, training building identification models in Caffe and Tensorflow
+- Collaborated in an agile software development team.
+- Trained building identification models in Caffe and Tensorflow.
 - Created end-to-end geospatial building data visualization web application using Kepler.gl.
 - Presented work and improvement to existing model to CEO of the company.
 
-**RPI** (Troy, Ny) - CSCI 1200 Data Structures Mentor, *01/16/2018 - Present*
+### **RPI** (Troy, Ny) - CSCI 1200 Data Structures Mentor, *01/16/2018 - Present*
 
 - Assist Data Structures students with weekly lab assignments and homework questions.
 - Teach topics involving C++ STL implementation and customized data structure design.
 
-**Dyscalculia Services** (Houston, Tx) - Dyscalculia Test, *05/20/2016 – 08/15/2017*
+### **Dyscalculia Services** (Houston, Tx) - Dyscalculia Test, *05/20/2016 – 08/15/2017*
 
 - Designed an online math test that returns a comprehensive report on a student’s math level.
 - Developed an admin panel for client to view statistics on all test takers.
 - Languages used: Javascript, PHP, and MYSQLi. Software libraries: fpdf and p5.js.
 - Test is deployed and constantly maintained.
 
-**Priemere Geotechnology** (Houston Tx) - Intern, *05/20/2013 – 08/15/2014*
+### **Priemere Geotechnology** (Houston Tx) - Intern, *05/20/2013 – 08/15/2014*
 
 - Updated company software from VB6 to VB.NET.
 - Created add-ons for Arc-GIS. focused on parsing large real world datasets.
