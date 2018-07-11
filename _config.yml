@@ -1,5 +1,10 @@
 title: Coen Valk
 description: RPI Computer Science 2020
 show_downloads: false
-google_analytics:
 theme: jekyll-theme-slate
+footer-links:
+  email: valkc@rpi.edu
+  facebook: clcjvalk
+  github: coenvalk
+  instagram: coenvalk
+  linkedin: coen-valk-5b396911a
