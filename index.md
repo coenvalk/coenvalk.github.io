@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Home
+# Coen Valk
 
 ## Contact
 
