@@ -120,7 +120,7 @@ To find a Co-Op for the Summer and Fall of 2019 focusing on back-end software de
   - BIOL 1010 - Introduction to Biology: B
   - BIOL 1015 - Introduction to Biology Lab: C
   - ECON 2010 - Intermediate Microeconomic Theory: C+
-- Spring 2016
+- Spring 2017
   - CSCI 2500 - Computer Organization: B+
   - CSCI 2200 - Foundations of Computer Science: B
   - PHIL 2140 - Introduction to Logic: A
