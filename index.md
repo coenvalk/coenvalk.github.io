@@ -65,6 +65,9 @@ To find a Co-Op for the Summer and Fall of 2019 focusing on back-end software de
 
   - Creating a math test that sends the user a comprehensive report in pdf form about the test taker’s math level. This project is finished and helps to give information about math deficiencies for people that cannot be tested in person. Follow-up assignment developing an admin panel for client to view statistics on all test takers. Languages used are Javascript, PHP, and MYSQLi. Other software libraries used include fpdf, p5.js, chart.js, and mathjax.
 
+ - [ConductAR](https://github.com/coenvalk/conductAR)
+   - An exciting new in progress project that allows users to conduct infront of a webcam and have music played in real-time. The original idea was to create an interactive installation focusing on music therapy in retirement homes and music participation in museums. Other use cases include real-time conducting for small theatre productions. This project makes use of machine learning to connect hand motion to tempo and dynamics of the music.
+
 - [Project Euler](https://projecteuler.net/)
 
   ![Project Euler](https://projecteuler.net/profile/coenvalk.png)
@@ -103,7 +106,7 @@ To find a Co-Op for the Summer and Fall of 2019 focusing on back-end software de
 - PSYC 1200 - General Psychology
   - An introduction to psychology. Topics covered vary with instructor but may include physiological bases of behavior, sensation, perception, learning, memory, child and adult development, motivation, personality, psychological disorders, social behavior.
 - ARTS 1440 - Music and Sound I
-  - his is the second of the three-course sequence in music theory and aural skills. The course covers the fundamentals of diatonic harmony and two-part species counterpoint. Aural skills include interval, scale and chord identification, rhythmic and tonal solfege, and dictation. Learning activites include weekly assignments in analysis, composition, performance and improvisation, and self-paced use of software in acquisition of aural skills. 
+  - This is the second of the three-course sequence in music theory and aural skills. The course covers the fundamentals of diatonic harmony and two-part species counterpoint. Aural skills include interval, scale and chord identification, rhythmic and tonal solfege, and dictation. Learning activites include weekly assignments in analysis, composition, performance and improvisation, and self-paced use of software in acquisition of aural skills. 
 
 ## Past Coursework
 
