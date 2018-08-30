@@ -53,7 +53,7 @@ Phone: 281-658-1842 <br/> Email: valkc@rpi.edu <br/> School Address: 133 Sunset 
 
 ## Current Campus Involvement
 
-President - ΔTΔ Fraternity <br/> Secretary - Partial Credit A Cappella <br/> CSCI 1200 Data Structures Undergraduate Mentor
+President - ΔTΔ Fraternity <br/> Secretary - Partial Credit A Cappella <br/> Director of Member Development - ΔTΔ Fraternity <br/> CSCI 1200 Data Structures Undergraduate Mentor
 
 ## Objective
 
