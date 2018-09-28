@@ -105,8 +105,6 @@ To find a Co-Op for the Summer and Fall of 2019 focusing on back-end software de
   - A self-contained course that includes topics from number theory, basic cryptography, and protocol security. This is a hybrid course with sufficient depth in both theory and hands-on experience with network protocols. Topics include: Classical Cryptography, Block Ciphers (DES, AES), Information Theoretical Cryptography, Randomness, RNG and Stream Ciphers, Hash and MAC Algorithms, Public-Key Cryptography, Elliptic Curve Cryptography, Digital Signatures and Identification, Internet Attacks, Web Security, SSL and PGP. 
 - PSYC 1200 - General Psychology
   - An introduction to psychology. Topics covered vary with instructor but may include physiological bases of behavior, sensation, perception, learning, memory, child and adult development, motivation, personality, psychological disorders, social behavior.
-- ARTS 1440 - Music and Sound I
-  - This is the second of the three-course sequence in music theory and aural skills. The course covers the fundamentals of diatonic harmony and two-part species counterpoint. Aural skills include interval, scale and chord identification, rhythmic and tonal solfege, and dictation. Learning activites include weekly assignments in analysis, composition, performance and improvisation, and self-paced use of software in acquisition of aural skills. 
 
 ## Past Coursework
 
