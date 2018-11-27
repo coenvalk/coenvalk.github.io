@@ -57,7 +57,7 @@ President - ΔTΔ Fraternity <br/> Secretary - Partial Credit A Cappella <br/> D
 
 ## Objective
 
-To find a Co-Op for the Summer and Fall of 2019 focusing on back-end software development, data mining, cryptography and security, or machine learning and artificial intelligence. Additionally, gaining experience applying theoretical computer science knowledge to industry standard software development processes, and learn about opportunities for career growth in software development. 
+To find temporary employment for the Fall 2019 term focusing on data analytics and backend software development. Additionally, to gain experience applying theoretical computer science knowledge to industry standard software development processes, and learn about opportunities for career growth in software development.
 
 ## Github Projects
 
