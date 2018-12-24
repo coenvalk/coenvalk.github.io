@@ -11,7 +11,7 @@ Phone: 281-658-1842 <br/> Email: valkc@rpi.edu <br/> School Address: 133 Sunset 
 ## Education
 
 ### **Rensselaer Polytechnic Institute (RPI)**, Troy, New York
-#### **B.S. Computer Science, Cumulative GPA: 3.33**
+#### **B.S. Computer Science, Cumulative GPA: 3.32**
 #### **Awards and Honors:**
 - **Dean's Honor List:** Fall 2016, Spring 2018
 - **Order of Omega Greek Honors Society**
@@ -97,17 +97,22 @@ To find temporary employment for the Fall 2019 term focusing on data analytics a
 
 ## Current Coursework
 
-- CSCI 4430 - Programming Languages
-  - This course is a study of the important concepts found in current programming languages. Topics include language processing (lexical analysis, parsing, type-checking, interpretation and compilation, run-time environment), the role of abstraction (data abstraction and control abstraction), programming paradigms (procedural, functional, object-oriented, logic-oriented, generic), and formal language definition. 
-- CSCI 4390 - Data Mining
-  - This course will provide an introductory survey of the main topics in data mining and knowledge discovery in databases (KDD), including: classification, clustering, association rules, sequence mining, similarity search, deviation detection, and so on. Emphasis will be on the algorithmic and system issues in KDD, as well as on applications such as Web mining, multimedia mining, bioinformatics, geographical information systems, etc. 
-- CSCI 4230 - Cryptography and Network Security I
-  - A self-contained course that includes topics from number theory, basic cryptography, and protocol security. This is a hybrid course with sufficient depth in both theory and hands-on experience with network protocols. Topics include: Classical Cryptography, Block Ciphers (DES, AES), Information Theoretical Cryptography, Randomness, RNG and Stream Ciphers, Hash and MAC Algorithms, Public-Key Cryptography, Elliptic Curve Cryptography, Digital Signatures and Identification, Internet Attacks, Web Security, SSL and PGP. 
-- PSYC 1200 - General Psychology
-  - An introduction to psychology. Topics covered vary with instructor but may include physiological bases of behavior, sensation, perception, learning, memory, child and adult development, motivation, personality, psychological disorders, social behavior.
+- CSCI 4320 - Parallel Programming
+  - Techniques and methods for parallel programming: models of parallel machines and programs, efficiency and complexity of parallel algorithms. Paradigms of parallel programming and corresponding extensions to sequential programming languages. Overview of parallel languages and coordination languages and models; programming on networks of workstations. Basic parallel algorithms: elementary computation, matrix multiplication, sorting; sample scientific application.
+- CSCI 4963 - RCOS (Rensselaer Center for Open Source)
+- CSCI 4967 - Economics and Computation
+- ECON 4130 - Money & Banking
+  - Financial institutions, especially commercial banking and the Federal Reserve System, are considered from three perspectives: their monetary roles; trends in the economic, organizational, and technological aspects of their operations; and their other economic roles-a critical view. Also, the role of money in macroeconomic theory is considered along with the role of monetary policies in relation to the problems of inflation and unemployment.
 
 ## Past Coursework
 
+- Fall 2018
+  - CSCI 4230 - Cryptography & Network Security I: A
+  - CSCI 4390 - Data Mining: B+
+  - CSCI 4430 - Programming Languages: B
+  - CSCI 2940 - Mentor CSCI 12000 Data Structures: A
+  - CSCI 2940 - Effective Mentoring: A
+  - PSYCH 1200 - General Psychology: C+
 - Spring 2018
   - CSCI 4210 - Operating Systems: B
   - CSCI 4260 - Graph Theory: Pass
