@@ -99,7 +99,6 @@ To find temporary employment for the Fall 2019 term focusing on data analytics a
 
 - CSCI 4320 - Parallel Programming
   - Techniques and methods for parallel programming: models of parallel machines and programs, efficiency and complexity of parallel algorithms. Paradigms of parallel programming and corresponding extensions to sequential programming languages. Overview of parallel languages and coordination languages and models; programming on networks of workstations. Basic parallel algorithms: elementary computation, matrix multiplication, sorting; sample scientific application.
-- CSCI 4963 - RCOS (Rensselaer Center for Open Source)
 - CSCI 4967 - Economics and Computation
 - ECON 4130 - Money & Banking
   - Financial institutions, especially commercial banking and the Federal Reserve System, are considered from three perspectives: their monetary roles; trends in the economic, organizational, and technological aspects of their operations; and their other economic roles-a critical view. Also, the role of money in macroeconomic theory is considered along with the role of monetary policies in relation to the problems of inflation and unemployment.
