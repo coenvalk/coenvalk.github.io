@@ -52,12 +52,12 @@ C++, Python, C, Javascript, Java, HTML, PHP, Git Version Control, Bash, TensorFl
 
 ## Leadership Experience
 
-- **New Member Educator** | Delta Tau Delta Fraternity	01/15/2019 – 04/26/2019
-- **Director of Member Development** | Delta Tau Delta Fraternity	08/27/2018 – 04/26/2019
-- **President** | Delta Tau Delta Fraternity	01/16/2018 – 12/15/2018
-- **Secretary** | Partial Credit A Cappella	01/16/2018 – 01/26/2019
-- **Director of Academic Affairs** | Delta Tau Delta Fraternity	08/25/2017 – 12/20/2017
-- **Community Service and Philanthropy Chair** | Delta Tau Delta Fraternity	01/20/2017 – 12/20/2017
+- **New Member Educator**: Delta Tau Delta Fraternity, 01/15/2019 – 04/26/2019
+- **Director of Member Development**: Delta Tau Delta Fraternity, 08/27/2018 – 04/26/2019
+- **President**: Delta Tau Delta Fraternity, 01/16/2018 – 12/15/2018
+- **Secretary**: Partial Credit A Cappella, 01/16/2018 – 01/26/2019
+- **Director of Academic Affairs**: Delta Tau Delta Fraternity, 08/25/2017 – 12/20/2017
+- **Community Service and Philanthropy Chair**: Delta Tau Delta Fraternity, 01/20/2017 – 12/20/2017
 
 
 ## Objective
