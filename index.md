@@ -6,60 +6,70 @@ layout: default
 
 ## Contact
 
-Phone: 281-658-1842 <br/> Email: valkc@rpi.edu <br/> School Address: 133 Sunset Terrace, Troy Ny 12180
+Phone: 281-658-1842 <br/>
+Email: valkc@rpi.edu <br/>
+School Address: 133 Sunset Terrace, Troy Ny 12180
 
 ## Education
 
 ### **Rensselaer Polytechnic Institute (RPI)**, Troy, New York
-#### **B.S. Computer Science, Cumulative GPA: 3.32**
+#### **B.S. Computer Science. Cumulative GPA: 3.31**
 #### **Awards and Honors:**
 - **Dean's Honor List:** Fall 2016, Spring 2018
 - **Order of Omega Greek Honors Society**
 - **Dr. Heinrich Medicus Scholarship Recipient**
+  - Local Fraternity Scholarship honoring strong academics and leadership.
 
 ## Professional Experience
 
 ### **Noblis Inc.** (Reston, Va) - Machine Learning Lab Intern, *06/04/2018 - 08/10/2018*
 
-- Collaborated in an agile software development team.
-- Trained building identification models in Caffe and Tensorflow.
-- Created end-to-end geospatial building data visualization web application using Kepler.gl.
-- Presented work and improvement to existing model to CEO of the company.
+- Developed building image classifier for overhead drone footage in TensorFlow.
+- Collaborated on an agile software development team.
+- Created web application to overlay identification model output on a map using Kepler.gl.
+- Presented work and improvement of existing model to CEO of the company.
 
-### **RPI** (Troy, Ny) - CSCI 1200 Data Structures Mentor, *01/16/2018 - Present*
 
-- Assist Data Structures students with weekly lab assignments and homework questions.
+### **RPI** (Troy, Ny) - CSCI 1200 Data Structures Mentor, *01/16/2018 - 04/26/2019*
+
+- Assist in weekly labs and office hour sessions providing help on assignments to more than 50 students.
 - Teach topics involving C++ STL implementation and customized data structure design.
+
 
 ### **Dyscalculia Services** (Houston, Tx) - Dyscalculia Test, *05/20/2016 – 08/15/2017*
 
-- Designed an online math test that returns a comprehensive report on a student’s math level.
-- Developed an admin panel for client to view statistics on all test takers.
-- Languages used: Javascript, PHP, and MYSQLi. Software libraries: fpdf and p5.js.
-- Test is deployed and constantly maintained.
+- Designed an online math test that returns a comprehensive report on a student’s math level with Javascript and PHP.
+- Developed an admin panel to view statistics on all test takers and common incorrectly answered questions.
+
 
 ### **Priemere Geotechnology** (Houston, Tx) - Intern, *05/20/2013 – 08/15/2014*
 
 - Updated company software from VB6 to VB.NET.
-- Created add-ons for Arc-GIS. focused on parsing large real world datasets.
+- Created add-on for Arc-GIS allowing users to view soil and oil deposit cross-sections of a user defined region.
 
-## Competencies
+## Competencies (in order of proficiency)
+C++, Python, C, Javascript, Java, HTML, PHP, Git Version Control, Bash, TensorFlow, MATLAB
 
-| Advanced  |   Good     | Moderate |     Basic  |
-|-----------|------------|----------|------------|
-|     C++   |   Python   |   Java   | TensorFlow |
-|   C       | Javascript |   PHP    |   MATLAB   |
-| Ubuntu Bash |     HTML | Git Version Control | VB.NET |
+## Leadership Experience
 
-## Current Campus Involvement
+- **New Member Educator** | Delta Tau Delta Fraternity	01/15/2019 – 04/26/2019
+- **Director of Member Development** | Delta Tau Delta Fraternity	08/27/2018 – 04/26/2019
+- **President** | Delta Tau Delta Fraternity	01/16/2018 – 12/15/2018
+- **Secretary** | Partial Credit A Cappella	01/16/2018 – 01/26/2019
+- **Director of Academic Affairs** | Delta Tau Delta Fraternity	08/25/2017 – 12/20/2017
+- **Community Service and Philanthropy Chair** | Delta Tau Delta Fraternity	01/20/2017 – 12/20/2017
 
-President - ΔTΔ Fraternity <br/> Secretary - Partial Credit A Cappella <br/> Director of Member Development - ΔTΔ Fraternity <br/> CSCI 1200 Data Structures Undergraduate Mentor
 
 ## Objective
 
-To find temporary employment for the Fall 2019 term focusing on data analytics and backend software development. Additionally, to gain experience applying theoretical computer science knowledge to industry standard software development processes, and learn about opportunities for career growth in software development.
+To find temporary employment for the Fall 2019 term focusing on data analytics and backend software development.
 
 ## Github Projects
+
+- [CondenseMyTalk](https://github.com/coenvalk/condensemytalk)
+  - Automatic video lecture summaries based on crowd-sourced voting, keyword search, and audio transcript summary.
+  - Made with Python, NLTK, and the Google Cloud Speech-to-text API.
+  - Ranked in top 15 hacks out of 53 submissions entered at HackRPI 2019 hackathon.
 
 - [Dyscalculia Test](https://dyscalculiatesting.com/)
 
@@ -95,16 +105,12 @@ To find temporary employment for the Fall 2019 term focusing on data analytics a
 
   - A genetic algorithm helper class written in C++
 
-## Current Coursework
-
-- CSCI 4320 - Parallel Programming
-  - Techniques and methods for parallel programming: models of parallel machines and programs, efficiency and complexity of parallel algorithms. Paradigms of parallel programming and corresponding extensions to sequential programming languages. Overview of parallel languages and coordination languages and models; programming on networks of workstations. Basic parallel algorithms: elementary computation, matrix multiplication, sorting; sample scientific application.
-- CSCI 4967 - Economics and Computation
-- ECON 4130 - Money & Banking
-  - Financial institutions, especially commercial banking and the Federal Reserve System, are considered from three perspectives: their monetary roles; trends in the economic, organizational, and technological aspects of their operations; and their other economic roles-a critical view. Also, the role of money in macroeconomic theory is considered along with the role of monetary policies in relation to the problems of inflation and unemployment.
-
 ## Past Coursework
 
+- Spring 2019
+  - CSCI 4967 - Economics and Computation: A
+  - CSCI 4320 - Parallel Programming: B+
+  - ECON 4130 - Money & Banking: C+
 - Fall 2018
   - CSCI 4230 - Cryptography & Network Security I: A
   - CSCI 4390 - Data Mining: B+
