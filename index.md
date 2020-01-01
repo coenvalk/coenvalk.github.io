@@ -4,23 +4,24 @@ layout: default
 
 # Coen Valk
 
+## Professional Statement
+
+Committed software engineer with a detailed approach to data analysis.
+
 ## Contact
 
 Phone: 281-658-1842 <br/>
 Email: valkc@rpi.edu <br/>
 School Address: 133 Sunset Terrace, Troy Ny 12180
 
-## Education
-
-### **Rensselaer Polytechnic Institute (RPI)**, Troy, New York
-#### **B.S. Computer Science. Cumulative GPA: 3.31**
-#### **Awards and Honors:**
-- **Dean's Honor List:** Fall 2016, Spring 2018
-- **Order of Omega Greek Honors Society**
-- **Dr. Heinrich Medicus Scholarship Recipient**
-  - Local Fraternity Scholarship honoring strong academics and leadership.
-
 ## Professional Experience
+
+### **Microsoft** (Redmond, Wa) - Software Engineering Intern, *05/28/2019 - 08/17/2019*
+
+- Developed test health metrics to show to test owners on an analytics dashboard
+- Provided recommendations on test duration SLA to test automation team for test owners
+- Created regression model for dynamic machine allocation and usage across all testing content.
+
 
 ### **Noblis Inc.** (Reston, Va) - Machine Learning Lab Intern, *06/04/2018 - 08/10/2018*
 
@@ -59,10 +60,15 @@ C++, Python, C, Javascript, Java, HTML, PHP, Git Version Control, Bash, TensorFl
 - **Director of Academic Affairs**: Delta Tau Delta Fraternity, 08/25/2017 – 12/20/2017
 - **Community Service and Philanthropy Chair**: Delta Tau Delta Fraternity, 01/20/2017 – 12/20/2017
 
+## Education
 
-## Objective
-
-To find temporary employment for the Fall 2019 term focusing on data analytics and backend software development.
+### **Rensselaer Polytechnic Institute (RPI)**, Troy, New York
+#### **B.S. Computer Science. Cumulative GPA: 3.31**
+#### **Awards and Honors:**
+- **Dean's Honor List:** Fall 2016, Spring 2018
+- **Order of Omega Greek Honors Society**
+- **Dr. Heinrich Medicus Scholarship Recipient**
+  - Local Fraternity Scholarship honoring strong academics and leadership.
 
 ## Github Projects
 
@@ -70,43 +76,36 @@ To find temporary employment for the Fall 2019 term focusing on data analytics a
   - Automatic video lecture summaries based on crowd-sourced voting, keyword search, and audio transcript summary.
   - Made with Python, NLTK, and the Google Cloud Speech-to-text API.
   - Ranked in top 15 hacks out of 53 submissions entered at HackRPI 2019 hackathon.
-
 - [Dyscalculia Test](https://dyscalculiatesting.com/)
-
   - Creating a math test that sends the user a comprehensive report in pdf form about the test taker’s math level. This project is finished and helps to give information about math deficiencies for people that cannot be tested in person. Follow-up assignment developing an admin panel for client to view statistics on all test takers. Languages used are Javascript, PHP, and MYSQLi. Other software libraries used include fpdf, p5.js, chart.js, and mathjax.
-
  - [ConductAR](https://github.com/coenvalk/conductAR)
    - An exciting new in progress project that allows users to conduct infront of a webcam and have music played in real-time. The original idea was to create an interactive installation focusing on music therapy in retirement homes and music participation in museums. Other use cases include real-time conducting for small theatre productions. This project makes use of machine learning to connect hand motion to tempo and dynamics of the music.
-
 - [Project Euler](https://projecteuler.net/)
 
   ![Project Euler](https://projecteuler.net/profile/coenvalk.png)
-
 - [Tabling Schedule](https://github.com/coenvalk/TablingScheduling)
-
   - A schedule optimizer that takes in groups of people's available schedules and returns a schedule of time slots that caters to everyone's availability in addition to distributing the workload as evenly as possible.
-
 - [Collatz Conjecture](https://github.com/coenvalk/Collatz-Conjecture)
-
   - Three programs focusing on visualizing the Collatz Conjecture in C++
     - **Collatz Tree:** Shows numbers branching out following reverse rule.
     - **Collatz Sequence:** Follows one number’s path to one.
     - **Collatz Largest:** Finds the longest Collatz sequence under a given number.
-
 - [Prime Factorization](https://github.com/coenvalk/Prime-Factorization)
-
   - a prime factorization program that can find the prime factorization of a number and the prime factorizations of all values below a given number written in C.
-
 - [Mastermind](https://github.com/coenvalk/mastermind)
-
   - Code from a high school project about finding the correct code to a game of mastermind in the fewest amount of moves. The essay associated with the program is [here.](https://drive.google.com/file/d/0B8CNl_hZHtFzTm5ESzZ0QVRLV0k/view)
-
 - [Simple Genetic Algorithm](https://github.com/coenvalk/Simple-Genetic-Algorithm)
-
   - A genetic algorithm helper class written in C++
 
 ## Past Coursework
 
+- Spring 2020
+  - CSCI 4150 - Introduction To Artificial Intelligence
+  - CSCI 4964 - Graph Mining
+  - COGS 2340 - Introduction to Linguistics
+  - ECON 4190 - International Economics and Globalization
+- Fall 2019
+  - Co-Op at Dyscalculia Services
 - Spring 2019
   - CSCI 4967 - Economics and Computation: A
   - CSCI 4320 - Parallel Programming: B+
