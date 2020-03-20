@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    height: 100vh;
+}
+
+.body {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    transition: 1s ease-out;
+    box-shadow: 0.5em 0 1em #888888;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    padding: 1em;
+    transition: 0.5s ease-out;
+}
+
+.header a:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.remainder .icon {
+    display: none;
+}
+
+.content {
+    margin: auto;
+    min-height: 100vh;
+}
+
+.remainder {
+    flex-shrink: 1;
+}
+
+.icon {
+    float: right;
+}
+
+.splash {
+    background-image: url('../images/background/background.jpg');
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.splash h1 {
+    font-size: 2em;
+    font-size: 12vw;
+    margin-bottom: 0.4em;
+}
+
+.splash h2 {
+    margin-top: 0.4em;
+    font-size: 1.5em;
+    font-size: 6vw;
+}
+
+.footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .remainder .icon {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .nav.responsive {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .content {
+        padding: 0.5em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .content {
+        width: 80%;
+    }
+}
+
+
+/* Responsive background images */
+
+@media screen and (max-height: 2160px) {
+    .splash {
+        background-image: url('../images/background/background-2160h.jpg');
+    }
+}
+
+@media screen and (max-height: 1440px) {
+    .splash {
+        background-image: url('../images/background/background-1440h.jpg');
+    }
+}
+
+@media screen and (max-height: 1080px) {
+    .splash {
+        background-image: url('../images/background/background-1080h.jpg');
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .splash {
+        background-image: url('../images/background/background-800h.jpg');
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .splash {
+        background-image: url('../images/background/background-600h.jpg');
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .splash {
+        background-image: url('../images/background/background-400h.jpg');
+    }
+}
