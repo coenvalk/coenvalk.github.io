@@ -135,11 +135,11 @@ plt.show()
 
 
 
-{% highlight py %}
+```python
 x_log = np.log(x)
 y_log = np.log(y)
 m, b = np.polyfit(x_log, np.log(y), 1)
-{% endhighlight %}
+```
 
 
 ```python

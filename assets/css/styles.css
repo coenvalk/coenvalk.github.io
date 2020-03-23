@@ -118,13 +118,18 @@ body {
     background-color: #eee;
 }
 
+.language-plaintext div pre {
+    background-color: white;
+    border: 0px;
+}
+
 div pre {
-    border: 1px solid black;
+    border: 1px solid gray;
     width: 100%;
     overflow-x: auto;
     padding: 0.5em;
     background-color: #eee;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .footer {
