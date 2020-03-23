@@ -1,0 +1,28 @@
+{% include header.html %}
+<div class="splash">
+    <h1>Coen Valk</h1>
+    <h2>Data Focused Engineer</h2>
+</div>
+<div class="content">
+    <div class="blog">
+        <div class="posts">
+            {{content}} {% for post in paginator.posts %}
+            <div class="post" onclick="location.href='{{ post.url }}'">
+                <h1>{{ post.title }}</h1>
+                <p class="author">
+                    <span class="date">{{ post.date | date_to_string }}</span>
+                </p>
+                {{ post.excerpt }}
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="page_number">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous">Newer</a> {% endif %}
+            <span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next">Older</a> {% endif %}
+        </div>
+    </div>
+</div>
+{% include footer.html %}
