@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content {
+    flex-grow: 1;
+    padding: 0px;
+}
+
+footer {
+    flex-shrink: 1;
+}
+
+.splash {
+    background-image: url('/assets/images/background.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.splash h1 {
+    font-size: 2em;
+    font-size: 12vw;
+}
+
+.splash h2 {
+    font-size: 1.5em;
+    font-size: 9vw;
+}
