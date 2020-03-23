@@ -1,15 +1,16 @@
 title: Coen Valk
+subtitle: Data Focused Engineer
 email: valkc@rpi.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Data Focused Engineer
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://coenvalk.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
-paginate: 5
-markdown: kramdown
-highlighter: rouge
+  Coen Valk | Data Focused Engineer | Washington
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: clcjvalk
+github_username:  clcjvalk
+linkedin_username: coen-valk-5b396911a
 
 # Build settings
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
