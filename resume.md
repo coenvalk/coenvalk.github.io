@@ -10,12 +10,6 @@ permalink: /resume/
 
 Committed software engineer with a detailed approach to data analysis.
 
-## Contact
-
-Phone: 281-658-1842 <br/>
-Email: valkc@rpi.edu <br/>
-School Address: 133 Sunset Terrace, Troy Ny 12180
-
 ## Professional Experience
 
 ### **Microsoft** (Redmond, Wa) - Software Engineering Intern, *05/28/2019 - 08/17/2019*
