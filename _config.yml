@@ -17,4 +17,5 @@ plugins:
 
 exclude:
   - scripts
+  - notebooks
 
