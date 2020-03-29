@@ -1,6 +1,9 @@
 ---
 layout: post
 title: SIR Model Fit for COVID-19
+subtitle: Where is COVID-19 spreading to next?
+imgurl: https://www.state.gov/wp-content/uploads/2020/03/2871-2560x852.png
+imgsource: https://pixabay.com/
 category: data science
 tags:
     - python
@@ -40,8 +43,8 @@ There are two parameters that define the growth of the model:
 Due to limitations on how COVID-19 cases are reported, it is infeasible to get accurate statistics on how many people are still active with COVID-19 and who has healthily recovered. This means that there is a blurred line between the "infected" and "recovered" set. However, there are relatively accurate results on how many people have passed away from the virus. Let's change our compartments a little so that our model reflects our data more effectively:
 
 $$
-\frac{dS}{dt} = -\frac{\beta S C}{N} \\
-\frac{dI}{dt} = \frac{\beta S C}{N} - (\gamma + \alpha) I \\
+\frac{dS}{dt} = -\frac{\beta S I}{N} \\
+\frac{dI}{dt} = \frac{\beta S I}{N} - (\gamma + \alpha) I \\
 \frac{dR}{dt} = \gamma I \\
 \frac{dD}{dt} = \alpha I
 $$

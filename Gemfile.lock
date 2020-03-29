@@ -248,6 +248,7 @@ DEPENDENCIES
   activesupport (>= 4.1.11)
   github-pages
   jekyll-feed
+  jemoji
   minima
   tzinfo
   tzinfo-data

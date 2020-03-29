@@ -14,12 +14,20 @@ output = repo.git.submodule('update', '--remote')
 
 confirmed = pd.read_csv(os.path.join(data_root, "time_series_covid19_confirmed_global.csv"))
 deaths = pd.read_csv(os.path.join(data_root, "time_series_covid19_deaths_global.csv"))
-confirmed = confirmed.sum()[2:]
-deaths = deaths.sum()[2:]
+recovered = pd.read_csv(os.path.join(data_root, "time_series_covid19_recovered_global.csv"))
+
+confirmed = confirmed.drop(columns=["Province/State", "Country/Region", "Lat", "Long"])
+deaths = deaths.drop(columns=["Province/State", "Country/Region", "Lat", "Long"])
+recovered = recovered.drop(columns=["Province/State", "Country/Region", "Lat", "Long"])
+
+confirmed = confirmed.sum()
+deaths = deaths.sum()
+recovered = recovered.sum()
 
 total_df = pd.DataFrame({
     "Deaths": deaths,
-    "Confirmed": confirmed
+    "Active": confirmed - deaths.values - recovered.values,
+    "Recovered": recovered
 })
 
 N = total_df.sum(axis=1)
@@ -35,15 +43,15 @@ m, b = np.polyfit(x_log, y_log, 1)
 y_fit_log = m * x_log + b
 y_fit = np.exp(y_fit_log)
 
-plt.plot(x, total_df["Confirmed"], 'o')
+plt.plot(x, total_df["Active"] + total_df["Recovered"] + total_df["Deaths"], 'o')
 plt.plot(x, y_fit)
-plt.title("Global Active Cases")
-plt.xlabel("Time")
+plt.title("Global Confirmed Cases")
+plt.xlabel("Time (Days)")
 plt.ylabel("# Confirmed Cases")
 plt.legend(["Raw Data", "Best Fit Line"])
 plt.xscale("log")
 plt.yscale("log")
 plt.savefig(os.path.join(output_path, "COVID-19_confirmed.png"))
 
-total_df[['Deaths', 'Confirmed', 'Healthy']].plot.area(title="Global Case Breakdown Over Time", colormap="RdYlGn")
+total_df[["Deaths", "Active", "Healthy", "Recovered"]].plot.area(title="Global Case Breakdown Over Time", colormap="RdYlGn")
 plt.savefig(os.path.join(output_path, "COVID-19.png"))

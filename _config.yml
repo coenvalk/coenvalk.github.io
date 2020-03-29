@@ -13,9 +13,11 @@ linkedin_username: coen-valk-5b396911a
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jemoji
 
 exclude:
   - scripts
   - notebooks
+
+show_excerpts: true
 
