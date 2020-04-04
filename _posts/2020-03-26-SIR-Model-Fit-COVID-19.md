@@ -3,7 +3,7 @@ layout: post
 title: SIR Model Fit for COVID-19
 subtitle: Where is COVID-19 spreading to next?
 imgurl: https://www.state.gov/wp-content/uploads/2020/03/2871-2560x852.png
-imgsource: https://pixabay.com/
+imgsource: https://www.state.gov/
 category: data science
 tags:
     - python

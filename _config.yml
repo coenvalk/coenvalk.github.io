@@ -16,8 +16,8 @@ plugins:
   - jemoji
 
 exclude:
-  - scripts
-  - notebooks
+  - scripts/
+  - /assets/notebooks/
 
 show_excerpts: true
 
