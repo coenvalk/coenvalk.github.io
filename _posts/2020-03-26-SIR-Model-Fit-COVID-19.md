@@ -9,6 +9,7 @@ tags:
     - python
     - notebook
     - COVID-19
+    - data science
 ---
 
 COVID-19 has been declared a global pandemic. It is on the news constantly and everyone is trying to do their part by participating in "social distancing" to slow the spread of the virus. The future is very uncertain right now, so to see if we can learn a little bit about what will happen I am going to take a dive into the data we have on COVID-19 and see if we can fit a mathematical model to its global spread. Can we make any solid predictions on how the virus will spread next?
