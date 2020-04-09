@@ -41,7 +41,7 @@ In the past few weeks I've implemented the following algorithms, chosen a metric
 
 ### Evaluation Metric
 
-By definition, outliers are rare. Because of this, one might think that a baseline model that predicts that there are zero outliers ever could be a sufficient solution. While this model might give very good accuracy (correct predictions over total predictions), it is - understandably - a poor outlier detection algorithm as it does not detect any outliers. Instead, we will be using the precision (percentage of flagged that are actual anomalies) and recall (percentage of real anomalies were actually flagged) of the model as our outlier threshold changes to measure the success of the model. Our metric for success will be the area under the curve of the precision recall curve.
+By definition, outliers are rare. Because of this, one might think that a baseline model that predicts that there are zero outliers ever could be a sufficient solution. While this model might give very good accuracy (correct predictions over total predictions), it is - understandably - a poor outlier detection algorithm as it does not detect any outliers. Instead, we will be using the precision (percentage of nodes flagged that are actual anomalies) and recall (percentage of real anomalies were actually flagged) of the model as our outlier threshold changes to measure the success of the model. Our metric for success will be the area under the curve of the precision recall curve.
 
 
 ```python
