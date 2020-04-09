@@ -11,6 +11,8 @@ tags:
     - data science
 ---
 
+This is a document detailing the work I've done learning about anomaly and outlier detection in financial transaction graphs.
+
 ```python
 import os
 import pickle
@@ -22,8 +24,6 @@ from matplotlib import pyplot as plt
 from sklearn.neighbors import LocalOutlierFactor
 from sklearn import base, metrics, decomposition, preprocessing
 ```
-
-This is a document detailing the work I've done learning about anomaly and outlier detection in financial transaction graphs.
 
 ## Recap
 
