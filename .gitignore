@@ -5,3 +5,5 @@ _site
 .jekyll-metadata
 vendor
 data/
+.pytest_cache/
+.vscode/
