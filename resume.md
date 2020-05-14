@@ -96,10 +96,10 @@ C++, Python, C, Javascript, Java, HTML, PHP, Git Version Control, Bash, TensorFl
 ## Past Coursework
 
 - Spring 2020
-  - CSCI 4150 - Introduction To Artificial Intelligence
-  - CSCI 4964 - Graph Mining
-  - COGS 2340 - Introduction to Linguistics
-  - ECON 4190 - International Economics and Globalization
+  - CSCI 4150 - Introduction To Artificial Intelligence: B
+  - CSCI 4964 - Graph Mining: A
+  - COGS 2340 - Introduction to Linguistics: B+
+  - ECON 4190 - International Economics and Globalization: Pass
 - Fall 2019
   - Co-Op at Dyscalculia Services
 - Spring 2019
