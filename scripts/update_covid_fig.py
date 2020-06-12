@@ -5,53 +5,69 @@ import pandas as pd
 from git import Repo
 from matplotlib import pyplot as plt
 
-repo_path = "../"
-data_root = "./COVID-19/csse_covid_19_data/csse_covid_19_time_series/"
-output_path = "../assets/images/"
+def create_graph(confirmed, deaths, recovered, output_path, identifier):
+    plt.tight_layout()
+    confirmed = confirmed.drop(columns=["Province/State", "Country/Region", "Lat", "Long"])
+    deaths = deaths.drop(columns=["Province/State", "Country/Region", "Lat", "Long"])
+    recovered = recovered.drop(columns=["Province/State", "Country/Region", "Lat", "Long"])
 
-repo = Repo(repo_path)
-output = repo.git.submodule('update', '--remote')
+    confirmed = confirmed.sum()
+    deaths = deaths.sum()
+    recovered = recovered.sum()
 
-confirmed = pd.read_csv(os.path.join(data_root, "time_series_covid19_confirmed_global.csv"))
-deaths = pd.read_csv(os.path.join(data_root, "time_series_covid19_deaths_global.csv"))
-recovered = pd.read_csv(os.path.join(data_root, "time_series_covid19_recovered_global.csv"))
+    total_df = pd.DataFrame({
+        "Deaths": deaths,
+        "Active": confirmed - deaths.values - recovered.values,
+        "Recovered": recovered
+    })
 
-confirmed = confirmed.drop(columns=["Province/State", "Country/Region", "Lat", "Long"])
-deaths = deaths.drop(columns=["Province/State", "Country/Region", "Lat", "Long"])
-recovered = recovered.drop(columns=["Province/State", "Country/Region", "Lat", "Long"])
+    N = total_df.sum(axis=1)
+    total_df['Healthy'] = N.max() - N
 
-confirmed = confirmed.sum()
-deaths = deaths.sum()
-recovered = recovered.sum()
+    x = np.arange(1, len(total_df) + 1)
+    y = confirmed
+    x_log = np.log(x)
+    y_log = np.log(y)
 
-total_df = pd.DataFrame({
-    "Deaths": deaths,
-    "Active": confirmed - deaths.values - recovered.values,
-    "Recovered": recovered
-})
+    m, b = np.polyfit(x_log, y_log, 1)
 
-N = total_df.sum(axis=1)
-total_df['Healthy'] = N.max() - N
+    y_fit_log = m * x_log + b
+    y_fit = np.exp(y_fit_log)
 
-x = np.arange(1, len(total_df) + 1)
-y = confirmed
-x_log = np.log(x)
-y_log = np.log(y)
+    plt.plot(x, total_df["Active"] + total_df["Recovered"] + total_df["Deaths"], 'o')
+    plt.plot(x, y_fit)
+    plt.title(identifier + " Confirmed Cases")
+    plt.xlabel("Time (Days)")
+    plt.ylabel("# Confirmed Cases")
+    plt.legend(["Raw Data", "Best Fit Line"])
+    plt.xscale("log")
+    plt.yscale("log")
+    plt.savefig(os.path.join(output_path, "COVID-19_" + identifier + "_confirmed.png"))
 
-m, b = np.polyfit(x_log, y_log, 1)
+    total_df[["Deaths", "Active", "Healthy", "Recovered"]].plot.area(title= identifier + " Case Breakdown Over Time", colormap="RdYlGn")
+    plt.savefig(os.path.join(output_path, "COVID-19_" + identifier + "_breakdown.png"))
+    plt.clf()
 
-y_fit_log = m * x_log + b
-y_fit = np.exp(y_fit_log)
 
-plt.plot(x, total_df["Active"] + total_df["Recovered"] + total_df["Deaths"], 'o')
-plt.plot(x, y_fit)
-plt.title("Global Confirmed Cases")
-plt.xlabel("Time (Days)")
-plt.ylabel("# Confirmed Cases")
-plt.legend(["Raw Data", "Best Fit Line"])
-plt.xscale("log")
-plt.yscale("log")
-plt.savefig(os.path.join(output_path, "COVID-19_confirmed.png"))
+if __name__ == "__main__":
+    repo_path = "../"
+    data_root = "./COVID-19/csse_covid_19_data/csse_covid_19_time_series/"
+    output_path = "../assets/images/"
 
-total_df[["Deaths", "Active", "Healthy", "Recovered"]].plot.area(title="Global Case Breakdown Over Time", colormap="RdYlGn")
-plt.savefig(os.path.join(output_path, "COVID-19.png"))
+    repo = Repo(repo_path)
+    output = repo.git.submodule('update', '--remote')
+
+    confirmed = pd.read_csv(os.path.join(data_root, "time_series_covid19_confirmed_global.csv"))
+    deaths = pd.read_csv(os.path.join(data_root, "time_series_covid19_deaths_global.csv"))
+    recovered = pd.read_csv(os.path.join(data_root, "time_series_covid19_recovered_global.csv"))
+    us_confirmed = confirmed[confirmed["Country/Region"] == "US"]
+    us_deaths = deaths[deaths["Country/Region"] == "US"]
+    us_recovered = recovered[recovered["Country/Region"] == "US"]
+    nl_confirmed = confirmed[confirmed["Country/Region"] == "Netherlands"]
+    nl_deaths = deaths[deaths["Country/Region"] == "Netherlands"]
+    nl_recovered = recovered[recovered["Country/Region"] == "Netherlands"]
+    
+    create_graph(confirmed, deaths, recovered, output_path, "Global")
+    create_graph(us_confirmed, us_deaths, us_recovered, output_path, "US")
+    create_graph(nl_confirmed, nl_deaths, nl_recovered, output_path, "Netherlands")
+

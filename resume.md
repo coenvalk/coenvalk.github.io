@@ -2,6 +2,7 @@
 layout: page
 title: Resume
 permalink: /resume/
+background: '/assets/images/background.jpg'
 ---
 
 # Coen Valk

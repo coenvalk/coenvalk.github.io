@@ -1,9 +1,5 @@
 _site
-.ipynb_checkpoints/
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
-data/
-.pytest_cache/
-.vscode/

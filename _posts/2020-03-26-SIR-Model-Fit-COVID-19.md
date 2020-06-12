@@ -1,8 +1,8 @@
 ---
 layout: post
 title: SIR Model Fit for COVID-19
-subtitle: Where is COVID-19 spreading to next?
-imgurl: /assets/images/covid19banner-800.png
+description: Where is COVID-19 spreading to next?
+background: /assets/images/covid19banner-800.png
 imgsource: https://www.state.gov/
 category: data science
 tags:
