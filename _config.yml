@@ -30,10 +30,10 @@ linkedin_username: coen-valk-5b396911a
 paginate: 5
 paginate_path: "/posts/page:num/"
 url: coenvalk.github.io
-baseurl: /
+baseurl: 
 
 # Build settings
-theme: jekyll-theme-clean-blog
+remote_theme: BlackrockDigital/startbootstrap-clean-blog-jekyll
 plugins:
   - jekyll-feed
   - jekyll-paginate
