@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Coen
 title: SIR Model Fit for COVID-19
 subtitle: Where is COVID-19 spreading to next?
 background: /assets/images/covid19banner-800.png

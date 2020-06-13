@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Coen
 title: Intrinsic Qualities in Language
 subtitle: My favorite rap songs are in Korean
 category: ramblings

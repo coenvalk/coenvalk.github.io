@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Coen
 title: "Graph Mining Update: Anomaly Detection in Financial Transaction Data"
 subtitle: Detecting illegal behavior in financial data using graphs
 background: https:////c.pxhere.com/images/66/ab/1a22a11f23f4a32d21b10fcd0164-1449185.jpg!d

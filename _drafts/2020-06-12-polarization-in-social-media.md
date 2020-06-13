@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Coen
 title: Polarization in Social Media
 subtitle: What does an "average" person on the internet think?
 category: ramblings

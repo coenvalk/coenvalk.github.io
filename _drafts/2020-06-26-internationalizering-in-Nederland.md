@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Coen
 title: Internationalizering van Internetservices in Nederland
 subtitle: '"Nederlands huisadres is verplicht voor internationale bestellingen"'
 category: ramblings
