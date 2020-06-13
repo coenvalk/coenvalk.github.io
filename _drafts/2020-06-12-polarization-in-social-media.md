@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Polarization in Social Media
-description: What does an "average" person on the internet think?
+subtitle: What does an "average" person on the internet think?
 category: ramblings
-background: https://cdn.pixabay.com/photo/2016/01/05/17/22/good-1122969_960_720.jpg
+background: https:////cdn.pixabay.com/photo/2016/01/05/17/22/good-1122969_960_720.jpg
 imgsource: https://pixabay.com/
 ---
 

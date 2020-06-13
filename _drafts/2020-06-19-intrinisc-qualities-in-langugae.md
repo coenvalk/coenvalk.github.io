@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Intrinsic Qualities in Language
-description: My favorite rap songs are in Korean
+subtitle: My favorite rap songs are in Korean
 category: ramblings
-background: https://c.pxhere.com/images/46/b4/d2671337be6957fe683f1545bbdb-1456201.jpg!d
+background: https:////c.pxhere.com/images/46/b4/d2671337be6957fe683f1545bbdb-1456201.jpg!d
 imgsource: https://pixabay.com/
 ---
 

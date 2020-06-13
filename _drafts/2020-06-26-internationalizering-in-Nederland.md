@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Internationalizering van Internetservices in Nederland
-description: '"Nederlands huisadres is verplicht voor internationale bestellingen"'
+subtitle: '"Nederlands huisadres is verplicht voor internationale bestellingen"'
 category: ramblings
-background: https://cdn.pixabay.com/photo/2017/07/10/10/02/globe-2489596_1280.jpg
+background: https:////cdn.pixabay.com/photo/2017/07/10/10/02/globe-2489596_1280.jpg
 imgsource: https://pixabay.com/
 ---
 
