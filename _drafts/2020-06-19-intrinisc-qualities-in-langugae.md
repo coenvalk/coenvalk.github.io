@@ -2,7 +2,7 @@
 layout: post
 author: Coen
 title: Intrinsic Qualities in Language
-subtitle: My favorite rap songs are in Korean
+subtitle: Are certain topics easier to express in a different language?
 category: ramblings
 background: https:////c.pxhere.com/images/46/b4/d2671337be6957fe683f1545bbdb-1456201.jpg!d
 imgsource: https://pixabay.com/

@@ -6,7 +6,6 @@ from git import Repo
 from matplotlib import pyplot as plt
 
 def create_graph(confirmed, deaths, recovered, output_path, identifier):
-    plt.tight_layout()
     confirmed = confirmed.drop(columns=["Province/State", "Country/Region", "Lat", "Long"])
     deaths = deaths.drop(columns=["Province/State", "Country/Region", "Lat", "Long"])
     recovered = recovered.drop(columns=["Province/State", "Country/Region", "Lat", "Long"])
@@ -24,8 +23,8 @@ def create_graph(confirmed, deaths, recovered, output_path, identifier):
     N = total_df.sum(axis=1)
     total_df['Healthy'] = N.max() - N
 
-    x = np.arange(1, len(total_df) + 1)
-    y = confirmed
+    x = np.arange(len(total_df) - 13, len(total_df) + 1)
+    y = confirmed[-14:]
     x_log = np.log(x)
     y_log = np.log(y)
 
@@ -34,17 +33,20 @@ def create_graph(confirmed, deaths, recovered, output_path, identifier):
     y_fit_log = m * x_log + b
     y_fit = np.exp(y_fit_log)
 
-    plt.plot(x, total_df["Active"] + total_df["Recovered"] + total_df["Deaths"], 'o')
+    plt.plot(x, y, 'o')
     plt.plot(x, y_fit)
     plt.title(identifier + " Confirmed Cases")
     plt.xlabel("Time (Days)")
     plt.ylabel("# Confirmed Cases")
-    plt.legend(["Raw Data", "Best Fit Line"])
+    plt.legend(["Raw Data", "Best Fit Line (y = {}*x^{})".format(round(b, 2), round(m, 2))])
     plt.xscale("log")
     plt.yscale("log")
+    plt.tight_layout()
     plt.savefig(os.path.join(output_path, "COVID-19_" + identifier + "_confirmed.png"))
+    plt.clf()
 
     total_df[["Deaths", "Active", "Healthy", "Recovered"]].plot.area(title= identifier + " Case Breakdown Over Time", colormap="RdYlGn")
+    plt.tight_layout()
     plt.savefig(os.path.join(output_path, "COVID-19_" + identifier + "_breakdown.png"))
     plt.clf()
 
