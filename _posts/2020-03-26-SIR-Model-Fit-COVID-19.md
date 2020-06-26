@@ -1,4 +1,5 @@
 ---
+mathjax: True
 layout: post
 author: Coen
 title: SIR Model Fit for COVID-19

@@ -1,4 +1,5 @@
 ---
+mathjax: True
 layout: post
 author: Coen
 title: "Graph Mining Update: Anomaly Detection in Financial Transaction Data"

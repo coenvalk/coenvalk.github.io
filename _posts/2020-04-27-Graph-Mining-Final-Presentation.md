@@ -1,4 +1,5 @@
 ---
+mathjax: True
 layout: post
 author: Coen
 title: "Graph Mining Final Presentation: Anomaly Detection in Graphs"
