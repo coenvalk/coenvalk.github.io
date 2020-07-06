@@ -38,7 +38,7 @@ def create_graph(confirmed, deaths, recovered, output_path, identifier):
     plt.title(identifier + " Confirmed Cases")
     plt.xlabel("Time (Days)")
     plt.ylabel("# Confirmed Cases")
-    plt.legend(["Raw Data", "Best Fit Line (y = {}*x^{})".format(round(b, 2), round(m, 2))])
+    plt.legend(["Raw Data", "Best Fit Line (y = {}*x^{})".format(round(np.exp(b), 2), round(m, 2))])
     plt.xscale("log")
     plt.yscale("log")
     plt.tight_layout()

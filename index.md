@@ -7,7 +7,7 @@ background: '/assets/images/background.jpg'
 
 This is my personal page filled with my thoughts and personal projects.
 
-# COVID-19 Status:
+## COVID-19 Status:
 
 [Data Source](https://github.com/CSSEGISandData/COVID-19)
 
@@ -22,4 +22,4 @@ This is my personal page filled with my thoughts and personal projects.
 
 *Netherlands does not report estimates on recovered cases to the JHU COVID-19 data repository.
 
-# Recent Posts:
+## Recent Posts:
