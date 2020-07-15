@@ -24,8 +24,6 @@ This is my personal page filled with my thoughts and personal projects.
 
 # Weight Loss Progress:
 
-Weight estimate is based on a 7 day moving average of daily weigh-ins to adjust for daily perturbations.
-
 ![Weight Loss Progress](/assets/images/Weight Loss Progress.png)
 
 # Recent Posts:
