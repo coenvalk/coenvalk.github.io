@@ -22,8 +22,4 @@ This is my personal page filled with my thoughts and personal projects.
 
 *Netherlands does not report estimates on recovered cases to the JHU COVID-19 data repository.
 
-# Weight Loss Progress:
-
-![Weight Loss Progress](/assets/images/Weight Loss Progress.png)
-
 # Recent Posts:
