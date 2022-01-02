@@ -13,39 +13,54 @@ Committed software engineer with a detailed approach to data analysis.
 
 ## Professional Experience
 
-### **Microsoft** (Redmond, Wa) - Software Engineering Intern, *05/28/2019 - 08/17/2019*
+### **Microsoft** (Redmond, Wa)
+
+#### Software Engineer, *08/19/2020 - Present*
+
+- Expand insights in OS testing repo for early detection of outages.
+- Analyze completion failures in Windows OS test system across
+millions of virtual machines running tests daily.
+- Present areas of improvement for test delivery reliability to
+leadership at weekly service health meeting.
+
+#### Software Engineering Intern, *05/28/2019 - 08/17/2019*
 
 - Developed test health metrics to show to test owners on an analytics dashboard
 - Provided recommendations on test duration SLA to test automation team for test owners
 - Created regression model for dynamic machine allocation and usage across all testing content.
 
+### **Noblis Inc.** (Reston, Va)
 
-### **Noblis Inc.** (Reston, Va) - Machine Learning Lab Intern, *06/04/2018 - 08/10/2018*
+#### Machine Learning Lab Intern, *06/04/2018 - 08/10/2018*
 
 - Developed building image classifier for overhead drone footage in TensorFlow.
 - Collaborated on an agile software development team.
 - Created web application to overlay identification model output on a map using Kepler.gl.
 - Presented work and improvement of existing model to CEO of the company.
 
+### **RPI** (Troy, Ny)
 
-### **RPI** (Troy, Ny) - CSCI 1200 Data Structures Mentor, *01/16/2018 - 04/26/2019*
+#### CSCI 1200 Data Structures Mentor, *01/16/2018 - 04/26/2019*
 
 - Assist in weekly labs and office hour sessions providing help on assignments to more than 50 students.
 - Teach topics involving C++ STL implementation and customized data structure design.
 
+### **Dyscalculia Services** (Houston, Tx)
 
-### **Dyscalculia Services** (Houston, Tx) - Dyscalculia Test, *05/20/2016 – 08/15/2017*
+#### Dyscalculia Test, *05/20/2016 – 08/15/2017*
 
 - Designed an online math test that returns a comprehensive report on a student’s math level with Javascript and PHP.
 - Developed an admin panel to view statistics on all test takers and common incorrectly answered questions.
 
+### **Priemere Geotechnology** (Houston, Tx)
 
-### **Priemere Geotechnology** (Houston, Tx) - Intern, *05/20/2013 – 08/15/2014*
+#### Intern, *05/20/2013 – 08/15/2014*
 
 - Updated company software from VB6 to VB.NET.
 - Created add-on for Arc-GIS allowing users to view soil and oil deposit cross-sections of a user defined region.
 
 ## Competencies (in order of proficiency)
+
 C++, Python, C, Javascript, Java, HTML, PHP, Git Version Control, Bash, TensorFlow, MATLAB
 
 ## Leadership Experience
@@ -60,8 +75,11 @@ C++, Python, C, Javascript, Java, HTML, PHP, Git Version Control, Bash, TensorFl
 ## Education
 
 ### **Rensselaer Polytechnic Institute (RPI)**, Troy, New York
+
 #### **B.S. Computer Science. Cumulative GPA: 3.31**
+
 #### **Awards and Honors:**
+
 - **Dean's Honor List:** Fall 2016, Spring 2018
 - **Order of Omega Greek Honors Society**
 - **Dr. Heinrich Medicus Scholarship Recipient**
