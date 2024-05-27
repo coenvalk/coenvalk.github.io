@@ -11,11 +11,34 @@ background: '/assets/images/background.jpg'
 
 Committed software engineer with a detailed approach to data analysis.
 
+## Skills
+
+Python,
+Spark,
+SQL,
+C#,
+LightGBM,
+Machine Learning,
+TypeScript & Javascript,
+Scikit-learn,
+C++,
+Rust,
+TensorFlow,
+Power BI,
+Dutch Native Speaker
+
 ## Professional Experience
 
 ### **Microsoft** (Redmond, Wa)
 
-#### Software Engineer, *08/19/2020 - Present*
+#### Applied Data Scientist, *12/15/2023 - Present*
+#### Applied Data Scientist, *03/01/2022 - 12/15/2023*
+
+- Develop, deploy, and maintain machine learning models to automatically detect financial fraud, service abuse, and hacked accounts on Azure; saving an estimated $200M monthly.
+- Create robust data pipelines in Spark to ingest and featurize terabytes of usage data hourly across a dozen different Azure services.
+- Investigate emerging fraud patterns using anomaly detection, clustering, and deep learning.
+
+#### Software Engineer, *08/19/2020 - 03/01/2022*
 
 - Expand insights in OS testing repo for early detection of outages.
 - Analyze completion failures in Windows OS test system across
@@ -58,10 +81,6 @@ leadership at weekly service health meeting.
 
 - Updated company software from VB6 to VB.NET.
 - Created add-on for Arc-GIS allowing users to view soil and oil deposit cross-sections of a user defined region.
-
-## Competencies (in order of proficiency)
-
-C++, Python, C, Javascript, Java, HTML, PHP, Git Version Control, Bash, TensorFlow, MATLAB
 
 ## Leadership Experience
 
