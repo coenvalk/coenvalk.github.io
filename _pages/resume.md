@@ -1,6 +1,8 @@
 ---
 layout: single
-title: Coen Valk
+title: Resume
+author: Coen Valk
+author_profile: true
 excerpt: Resume
 permalink: /resume/
 ---
