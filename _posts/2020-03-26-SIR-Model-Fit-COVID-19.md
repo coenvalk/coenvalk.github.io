@@ -33,7 +33,9 @@ SIR stands for susceptible, infected, removed. It is a compartmental mathematica
 The SIR model defines an [ODE](https://mathworld.wolfram.com/OrdinaryDifferentialEquation.html) which describes the growth and movement of people from group to group over time:
 
 $$ \frac{dS}{dt} = -\frac{\beta S I}{N} $$
+
 $$ \frac{dI}{dt} = \frac{\beta S I}{N} - \gamma I $$
+
 $$ \frac{dR}{dt} = \gamma I $$
 
 There are two parameters that define the growth of the model:

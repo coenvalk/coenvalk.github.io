@@ -1,7 +1,11 @@
 Coen Valk:
   name: "Coen Valk"
   bio: "Data-focused software engineer"
+  avatar: https://media.licdn.com/dms/image/C4D03AQHcerydqd3e6w/profile-displayphoto-shrink_400_400/0/1578440829864?e=1722470400&v=beta&t=DIei_TrntrlfBJk_nuQLkX1DI5Pd0EO5NofYx_KStNg
   links:
     - label: "LinkedIn"
       icon: "fa-brands fa-linkedin"
       url: "https://www.linkedin.com/in/coen-valk/"
+    - label: "GitHub"
+      icon: "fa-brands fa-github"
+      url: "https://github.com/coenvalk"
