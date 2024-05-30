@@ -1,8 +1,9 @@
 ---
-layout: page
-title: About
+layout: single
+author: Coen Valk
+author_profile: true
+title: About Me
 permalink: /about/
-background: '/assets/images/background.jpg'
 ---
 
 I am a software engineer and data scientist based in Redmond, Washington. I spend the majority of my personal time singing and making music.

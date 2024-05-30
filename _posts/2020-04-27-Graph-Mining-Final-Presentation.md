@@ -1,10 +1,13 @@
 ---
-mathjax: True
-layout: post
-author: Coen
+layout: single
+author: Coen Valk
 title: "Graph Mining Final Presentation: Anomaly Detection in Graphs"
-subtitle: Detecting outliers using graphs
-background: https:////c.pxhere.com/images/66/ab/1a22a11f23f4a32d21b10fcd0164-1449185.jpg!d
+excerpt: Detecting outliers using graphs
+header:
+    overlay_image: https:////c.pxhere.com/images/66/ab/1a22a11f23f4a32d21b10fcd0164-1449185.jpg!d
+    teaser: https:////c.pxhere.com/images/66/ab/1a22a11f23f4a32d21b10fcd0164-1449185.jpg!d
+    overlay_filter: 0.5
+    caption: "Photo credit: [**pxhere**](https://pxhere.com)"
 category: school
 tags:
     - python

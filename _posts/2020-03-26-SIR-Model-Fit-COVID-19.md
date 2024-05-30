@@ -1,11 +1,13 @@
 ---
-mathjax: True
-layout: post
-author: Coen
+layout: single
+author: Coen Valk
 title: SIR Model Fit for COVID-19
-subtitle: Where is COVID-19 spreading to next?
-background: /assets/images/covid19banner-800.png
-imgsource: https://www.state.gov/
+excerpt: "Where is COVID-19 spreading to next?"
+header:
+  overlay_image: /assets/images/covid19banner-800.png
+  teaser: /assets/images/covid19banner-800.png
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**state.gov**](https://www.state.gov/)"
 category: data science
 tags:
     - python
@@ -30,27 +32,23 @@ SIR stands for susceptible, infected, removed. It is a compartmental mathematica
 
 The SIR model defines an [ODE](https://mathworld.wolfram.com/OrdinaryDifferentialEquation.html) which describes the growth and movement of people from group to group over time:
 
-$$
-\frac{dS}{dt} = -\frac{\beta S I}{N} \\
-\frac{dI}{dt} = \frac{\beta S I}{N} - \gamma I \\
-\frac{dR}{dt} = \gamma I
-$$
+$$ \frac{dS}{dt} = -\frac{\beta S I}{N} $$
+$$ \frac{dI}{dt} = \frac{\beta S I}{N} - \gamma I $$
+$$ \frac{dR}{dt} = \gamma $$ I
 
 There are two parameters that define the growth of the model:
 
-- $\beta$: The infection rate
-- $\gamma$: Inverse mean recovery rate
+- \( \beta \): The infection rate
+- \( \gamma \): Inverse mean recovery rate
 
 ## Data
 
 Due to limitations on how COVID-19 cases are reported, it is infeasible to get accurate statistics on how many people are still active with COVID-19 and who has healthily recovered. This means that there is a blurred line between the "infected" and "recovered" set. However, there are relatively accurate results on how many people have passed away from the virus. Let's change our compartments a little so that our model reflects our data more effectively:
 
-$$
-\frac{dS}{dt} = -\frac{\beta S I}{N} \\
-\frac{dI}{dt} = \frac{\beta S I}{N} - (\gamma + \alpha) I \\
-\frac{dR}{dt} = \gamma I \\
-\frac{dD}{dt} = \alpha I
-$$
+$$ \frac{dS}{dt} = -\frac{\beta S I}{N} $$
+$$ frac{dI}{dt} = \frac{\beta S I}{N} - (\gamma + \alpha) $$
+$$ \frac{dR}{dt} = \gamma I $$
+$$ \frac{dD}{dt} = \alpha I $$
 
 Now we have 4 compartments, SIRD:
 
@@ -61,11 +59,11 @@ Now we have 4 compartments, SIRD:
 
 With 3 variables:
 
-- $\alpha$: Death rate
-- $\gamma$: Recovery rate
-- $\beta$: Infection rate
+- \( \alpha \): Death rate
+- \( \gamma \): Recovery rate
+- \( \beta \): Infection rate
 
-When looking at our data, we will treat $I + R = C$ as our confirmed cases set.
+When looking at our data, we will treat \( I + R = C \) as our confirmed cases set.
 
 ## Example
 
@@ -233,9 +231,9 @@ plot_data("Deaths", x_train, D_train, x_valid, D_valid)
 ![png](/assets/images/2020-03-26-SIR-Model-Fit-COVID-19_files/2020-03-26-SIR-Model-Fit-COVID-19_9_2.png)
 
 
-Now that we have our data we define our optimization function, which takes all three curves and performs a least squares optimization to find the best values for $\alpha$ and $\beta$
+Now that we have our data we define our optimization function, which takes all three curves and performs a least squares optimization to find the best values for \( \alpha \) and \( \beta \)
 
-NOTE: I made use of China's curve fit to find $\gamma$ as this model is difficult to project on the entire world's population otherwise.
+NOTE: I made use of China's curve fit to find \( \gamma \) as this model is difficult to project on the entire world's population otherwise.
 
 
 ```python

@@ -1,11 +1,9 @@
 ---
-layout: page
-title: Resume
+layout: single
+title: Coen Valk
+excerpt: Resume
 permalink: /resume/
-background: '/assets/images/background.jpg'
 ---
-
-# Coen Valk
 
 ## Professional Statement
 
@@ -31,7 +29,7 @@ Dutch Native Speaker
 
 ### **Microsoft** (Redmond, Wa)
 
-#### Applied Data Scientist, *12/15/2023 - Present*
+#### Applied Data Scientist II, *12/15/2023 - Present*
 #### Applied Data Scientist, *03/01/2022 - 12/15/2023*
 
 - Develop, deploy, and maintain machine learning models to automatically detect financial fraud, service abuse, and hacked accounts on Azure; saving an estimated $200M monthly.
