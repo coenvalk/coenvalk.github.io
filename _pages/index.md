@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: splash
-title: "Coen Valk: Data Focused Engineer"
+title: "Data-Focused Software Engineer"
 header:
     overlay_image: /assets/images/background.jpg
     actions:
@@ -13,4 +13,4 @@ header:
 permalink: /
 ---
 
-This is my personal page filled with my thoughts and personal projects.
+Welcome to my personal blog and portfolio. Here I will occasionally share my thoughts and any projects I'm currently working on.

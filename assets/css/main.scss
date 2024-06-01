@@ -15,3 +15,7 @@ $monospace: "Intel One Mono";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.page__hero--overlay {
+	min-height: 50vh;
+}

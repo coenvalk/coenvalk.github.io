@@ -1,5 +1,6 @@
 title: Coen Valk
-description: data-focused software engineer
+subtitle: Software Engineer
+description: Coen Valk's personal blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://coenvalk.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  coenvalk
@@ -46,3 +47,12 @@ defaults:
       author_profile: false
 
 enable_copy_code_button: true
+
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fa-brands fa-linkedin"
+      url: "https://www.linkedin.com/in/coen-valk/"
+    - label: "GitHub"
+      icon: "fa-brands fa-github"
+      url: "https://github.com/coenvalk"
