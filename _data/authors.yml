@@ -2,6 +2,7 @@ Coen Valk:
   name: "Coen Valk"
   bio: "Data-focused software engineer"
   avatar: /assets/images/profile.jpeg
+  location: Redmond, WA
   links:
     - label: "LinkedIn"
       icon: "fa-brands fa-linkedin"
