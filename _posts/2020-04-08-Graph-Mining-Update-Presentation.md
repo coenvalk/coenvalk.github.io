@@ -79,7 +79,7 @@ features = pd.read_csv(os.path.join(filepath, "elliptic_txs_features.csv"), head
 classes = pd.read_csv(os.path.join(filepath, "elliptic_txs_classes.csv"))
 ```
 
-To reduce the time of training quite a bit, I performed some dimensionality reduction with a pricipal component analysis. This changed the number of attributes from 167 down to 30 while keeping 90% of the variance. Additionally, some of the dataset is not known. For training, we remove these data points from consideration.
+To reduce the time of training quite a bit, I performed some dimensionality reduction with a principal component analysis. This changed the number of attributes from 167 down to 30 while keeping 90% of the variance. Additionally, some of the dataset is not known. For training, we remove these data points from consideration.
 
 
 ```python
@@ -198,7 +198,7 @@ plt.show()
 ![png](/assets/images/2020-04-08-Graph-Mining-Update-Presentation/output_16_1.png)
 
 
-Observe that as the outlier threshold lessens, more true outliers are identified, but also several false positives, causing the precision of the model to rapily decline.
+Observe that as the outlier threshold lessens, more true outliers are identified, but also several false positives, causing the precision of the model to rapidly decline.
 
 ### Direct Neighbor Outlier Detection (DNODA)
 
@@ -357,4 +357,4 @@ We see that using a Hybrid model gives some small improvement, although there is
 
 ## What's Next
 
-While the GLODA, DNODA, and CNA algorithms are implemented, they are not yet very good predictive models. Currently, the model naively measures the average distance from one node to each neighbor. This may not be ideal as illegal behavior does not necessarily have to be extrodinarily far from the norm. There may be some more nuanced patterns of illicit behavior that we can better capture with a classifier. The next step of the project is to include a classifier that takes aggregated data at the global, local, and community level to make more accurate predictions.
+While the GLODA, DNODA, and CNA algorithms are implemented, they are not yet very good predictive models. Currently, the model naively measures the average distance from one node to each neighbor. This may not be ideal as illegal behavior does not necessarily have to be extraordinarily far from the norm. There may be some more nuanced patterns of illicit behavior that we can better capture with a classifier. The next step of the project is to include a classifier that takes aggregated data at the global, local, and community level to make more accurate predictions.

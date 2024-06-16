@@ -85,7 +85,7 @@ nx.set_node_attributes(G=G, name="D", values=dict(zip(reduced_features["txId"], 
 
 ### GLODA
 
-Instead of using LOF, I use a simple naive bayesian classifier to create predictions without regard to the graph structure. Needless to say the model performs much better than before:
+Instead of using LOF, I use a simple naive Bayesian classifier to create predictions without regard to the graph structure. Needless to say the model performs much better than before:
 
 
 ```python

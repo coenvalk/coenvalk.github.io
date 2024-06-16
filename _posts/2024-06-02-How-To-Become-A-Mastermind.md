@@ -8,17 +8,17 @@ tags:
     - C
 ---
 
-In 11th and 12th grade I was enrolled in the [International Baccalaureate](https://www.ibo.org/about-the-ib/) program at my [highschool](https://www.nordangliaeducation.com/village-houston). Part of my higher-level math class curriculum was writing a 2,000 word essay on a math topic of my choosing. I enjoyed programming and I wanted to find a way to incorporate it into my project. I had recently learned about famous computer scientist and author of [*The Art of Computer Programming*](https://cs.stanford.edu/~knuth/taocp.html) Donald Knuth. One of [Donald Knuth's](https://en.wikipedia.org/wiki/Donald_Knuth) earlier papers - [*The Computer as a Mastermind*](https://www.cs.uni.edu/~wallingf/teaching/cs3530/resources/knuth-mastermind.pdf) caught my eye, and I decided I could replicate its results. I learned about the the board game [Mastermind](https://en.wikipedia.org/wiki/Mastermind_%28board_game%29), read up on [minimax](https://en.wikipedia.org/wiki/Minimax) decision making, and wrote some [C code](https://github.com/coenvalk/mastermind) that followed Knuth's winning strategy. I submitted my paper [*How to Become a Mastermind*](https://drive.google.com/file/d/0B8CNl_hZHtFzTm5ESzZ0QVRLV0k/view?resourcekey=0-n8PlszyU4NrlLWrGLp0REA) proud of the work I did and the things I learned.
+In 11th and 12th grade I was enrolled in the [International Baccalaureate](https://www.ibo.org/about-the-ib/) program at my [high-school](https://www.nordangliaeducation.com/village-houston). Part of my higher-level math class curriculum was writing a 2,000 word essay on a math topic of my choosing. I enjoyed programming and I wanted to find a way to incorporate it into my project. I had recently learned about famous computer scientist and author of [*The Art of Computer Programming*](https://cs.stanford.edu/~knuth/taocp.html) Donald Knuth. One of [Donald Knuth's](https://en.wikipedia.org/wiki/Donald_Knuth) earlier papers - [*The Computer as a Mastermind*](https://www.cs.uni.edu/~wallingf/teaching/cs3530/resources/knuth-mastermind.pdf) caught my eye, and I decided I could replicate its results. I learned about the board game [Mastermind](https://en.wikipedia.org/wiki/Mastermind_%28board_game%29), read up on [minimax](https://en.wikipedia.org/wiki/Minimax) decision making, and wrote some [C code](https://github.com/coenvalk/mastermind) that followed Knuth's winning strategy. I submitted my paper [*How to Become a Mastermind*](https://drive.google.com/file/d/0B8CNl_hZHtFzTm5ESzZ0QVRLV0k/view?resourcekey=0-n8PlszyU4NrlLWrGLp0REA) proud of the work I did and the things I learned.
 
 *As an aside: this was also the first paper I ever wrote in [$$ \LaTeX $$](https://www.latex-project.org/) after learning about the typesetting program at a math and programming pre-college summer camp I attended. I was very pleased with myself.*
 
-After a few weeks of waiting I received back a mark of 6 out of 7 - a very respectable score. At the time I was a little dissapointed I didn't get full marks considering all the hard work I put in, but I eventually made peace with my grade.
+After a few weeks of waiting I received back a mark of 6 out of 7 - a very respectable score. At the time I was a little disappointed I didn't get full marks considering all the hard work I put in, but I eventually made peace with my grade.
 
 That was 8 years ago. Since then, I have learned a lot more about programming, math, and science communication. As an exercise in reflection and growth, I want to share some thoughts on my code, my writing, and how I would approach the problem differently today.
 
 ## The Good
 
-Honestly - for a highschool project? Good effort. the code *works* and has no memory leaks which is already more than I can say for some of my other projects. I even included a [Makefile](https://github.com/coenvalk/mastermind/blob/master/Makefile) and [MIT license](https://github.com/coenvalk/mastermind/blob/master/LICENSE)! The underlying math in the paper is correct, with a few small nit-picky inaccuracies which we will discuss later. The writing is mostly understandable, with perhaps a slight over reliance on complicated math jargon and notation to make the topic sound more advanced than it actually is. The paper is well cited and all citations are properly formatted (thanks $$\LaTeX$$!) Finally, most impressive perhaps is the fact that we didn't have ChatGPT in those days to write essays for us.
+Honestly - for a high-school project? Good effort. The code *works* and has no memory leaks which is already more than I can say for some of my other projects. I even included a [Makefile](https://github.com/coenvalk/mastermind/blob/master/Makefile) and [MIT license](https://github.com/coenvalk/mastermind/blob/master/LICENSE)! The underlying math in the paper is correct, with a few small nit-picky inaccuracies which we will discuss later. The writing is mostly understandable, with perhaps a slight over reliance on complicated math jargon and notation to make the topic sound more advanced than it actually is. The paper is well cited and all citations are properly formatted (thanks $$\LaTeX$$!) Finally, most impressive perhaps is the fact that we didn't have Chat GPT in those days to write essays for us.
 
 ## The Bad
 
@@ -38,12 +38,12 @@ In one sentence, Knuth accurately summarizes the algorithm used to find the next
 >
 > &mdash; Coen Valk, 2016
 
-While it still boils down to a single sentence summary, mine is much more difficult to understand. It has unecessary and confusing set theory jargon and the commas are in the wrong place. While I still have a nasty habit of being a bit too verbose, I've learned that understanding after a first reading is much more important than cramming a bunch of math on a page.
+While it still boils down to a single sentence summary, mine is much more difficult to understand. It has unnecessary and confusing set theory jargon and the commas are in the wrong place. While I still have a nasty habit of being a bit too verbose, I've learned that understanding after a first reading is much more important than cramming a bunch of math on a page.
 
 
 ### Memory Allocations
 
-After running the compiled program with valgrind I was pleased to see that high school Coen had remembered to take care of all memory leaks! However, something else stood out to me in the heap summary:
+After running the compiled program with Valgrind I was pleased to see that high school Coen had remembered to take care of all memory leaks! However, something else stood out to me in the heap summary:
 
 ```
 ...
@@ -59,7 +59,7 @@ Yay! I win!
 ==16554== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 ```
 
-nearly 900K heap allocations for a simple program like this seems pretty high. By far the largest number of heap allocations come from how I create codes on the fly rather than keep a full list of every possible code in memory at the same time. This is a useful pattern for when we want to play the game with a longer code or more possible colors, as the set of possible solutions grows exponentially in size. That does mean the `get_code()` function is called frequently in loops like this:
+Nearly 900K heap allocations for a simple program like this seems pretty high. By far the largest number of heap allocations come from how I create codes on the fly rather than keep a full list of every possible code in memory at the same time. This is a useful pattern for when we want to play the game with a longer code or more possible colors, as the set of possible solutions grows exponentially in size. That does mean the `get_code()` function is called frequently in loops like this:
 
 ```c
 unsigned char *get_code(int length, unsigned char colors, int index)
@@ -122,7 +122,7 @@ void print_all_guesses(bool *S, int n, int length, unsigned char colors)
 }
 ```
 
-now let's look at the number of memory allocations:
+Now let's look at the number of memory allocations:
 
 ```
 ...
@@ -225,7 +225,7 @@ There are likely further optimizations I can make, but for the purposes of this 
 
 ## The Ugly
 
-The most glaring ugliness is the function and variable naming. There is no case consistency at all. `snake_case`, `camelCase`, and `PascalCase` are all used interchangeably. variables are frequently single letters, without a clear way to infer what they mean. thankfully in modern IDE's this, as well as re-formatting the entire document, can be done automatically with little effort at all.
+The most glaring ugliness is the function and variable naming. There is no case consistency at all. `snake_case`, `camelCase`, and `PascalCase` are all used interchangeably. Variables are frequently single letters, without a clear way to infer what they mean. Thankfully in modern IDEs this, as well as re-formatting the entire document, can be done automatically with little effort at all.
 
 Let's take the `analyze()` function as an example of difficult to read code:
 
@@ -261,7 +261,7 @@ int *analyze(unsigned char *code, unsigned char *guess, int length, unsigned cha
 }
 ```
 
-function and variable names are not descriptive, making the logic difficult to follow. While I'm not a "self-documenting" code expert, there's a lot we can change to make this more readable, as well as reduce more memory allocations by incorporating the same pattern as above:
+Function and variable names are not descriptive, making the logic difficult to follow. While I'm not a "self-documenting" code expert, there's a lot we can change to make this more readable, as well as reduce more memory allocations by incorporating the same pattern as above:
 
 ```c
 struct feedback {
