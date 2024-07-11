@@ -1,65 +1,123 @@
 ---
 layout: single
 author: Coen Valk
-title: "How to Become a Mastermind"
+title: How to Become a Mastermind
 excerpt: Revisiting code I wrote in highschool. Can I do better today?
 category: school
 tags:
-    - C
+  - C
 ---
 
-In 11th and 12th grade I was enrolled in the [International Baccalaureate](https://www.ibo.org/about-the-ib/) program at my [high-school](https://www.nordangliaeducation.com/village-houston). Part of my higher-level math class curriculum was writing a 2,000 word essay on a math topic of my choosing. I enjoyed programming and I wanted to find a way to incorporate it into my project. I had recently learned about famous computer scientist and author of [*The Art of Computer Programming*](https://cs.stanford.edu/~knuth/taocp.html) Donald Knuth. One of [Donald Knuth's](https://en.wikipedia.org/wiki/Donald_Knuth) earlier papers - [*The Computer as a Mastermind*](https://www.cs.uni.edu/~wallingf/teaching/cs3530/resources/knuth-mastermind.pdf) caught my eye, and I decided I could replicate its results. I learned about the board game [Mastermind](https://en.wikipedia.org/wiki/Mastermind_%28board_game%29), read up on [minimax](https://en.wikipedia.org/wiki/Minimax) decision making, and wrote some [C code](https://github.com/coenvalk/mastermind) that followed Knuth's winning strategy. I submitted my paper [*How to Become a Mastermind*](https://drive.google.com/file/d/0B8CNl_hZHtFzTm5ESzZ0QVRLV0k/view?resourcekey=0-n8PlszyU4NrlLWrGLp0REA) proud of the work I did and the things I learned.
+In 11th and 12th grade I was enrolled in the
+[International Baccalaureate](https://www.ibo.org/about-the-ib/) program at my
+[high-school](https://www.nordangliaeducation.com/village-houston). Part of my
+higher-level math class curriculum was writing a 2,000 word essay on a math
+topic of my choosing. I enjoyed programming and I wanted to find a way to
+incorporate it into my project. I had recently learned about famous computer
+scientist and author of
+[_The Art of Computer Programming_](https://cs.stanford.edu/~knuth/taocp.html)
+Donald Knuth. One of
+[Donald Knuth's](https://en.wikipedia.org/wiki/Donald_Knuth) earlier papers -
+[_The Computer as a Mastermind_](https://www.cs.uni.edu/~wallingf/teaching/cs3530/resources/knuth-mastermind.pdf)
+caught my eye, and I decided I could replicate its results. I learned about the
+board game
+[Mastermind](https://en.wikipedia.org/wiki/Mastermind_%28board_game%29), read up
+on [minimax](https://en.wikipedia.org/wiki/Minimax) decision making, and wrote
+some [C code](https://github.com/coenvalk/mastermind) that followed Knuth's
+winning strategy. I submitted my paper
+[_How to Become a Mastermind_](https://drive.google.com/file/d/0B8CNl_hZHtFzTm5ESzZ0QVRLV0k/view?resourcekey=0-n8PlszyU4NrlLWrGLp0REA)
+proud of the work I did and the things I learned.
 
-*As an aside: this was also the first paper I ever wrote in [$$ \LaTeX $$](https://www.latex-project.org/) after learning about the typesetting program at a math and programming pre-college summer camp I attended. I was very pleased with myself.*
+_As an aside: this was also the first paper I ever wrote in
+[$$ \LaTeX $$](https://www.latex-project.org/) after learning about the
+typesetting program at a math and programming pre-college summer camp I
+attended. I was very pleased with myself._
 
-After a few weeks of waiting I received back a mark of 6 out of 7 - a very respectable score. At the time I was a little disappointed I didn't get full marks considering all the hard work I put in, but I eventually made peace with my grade.
+After a few weeks of waiting I received back a mark of 6 out of 7 - a very
+respectable score. At the time I was a little disappointed I didn't get full
+marks considering all the hard work I put in, but I eventually made peace with
+my grade.
 
-That was 8 years ago. Since then, I have learned a lot more about programming, math, and science communication. As an exercise in reflection and growth, I want to share some thoughts on my code, my writing, and how I would approach the problem differently today.
+That was 8 years ago. Since then, I have learned a lot more about programming,
+math, and science communication. As an exercise in reflection and growth, I want
+to share some thoughts on my code, my writing, and how I would approach the
+problem differently today.
 
 ## The Good
 
-Honestly - for a high-school project? Good effort. The code *works* and has no memory leaks which is already more than I can say for some of my other projects. I even included a [Makefile](https://github.com/coenvalk/mastermind/blob/master/Makefile) and [MIT license](https://github.com/coenvalk/mastermind/blob/master/LICENSE)! The underlying math in the paper is correct, with a few small nit-picky inaccuracies which we will discuss later. The writing is mostly understandable, with perhaps a slight over reliance on complicated math jargon and notation to make the topic sound more advanced than it actually is. The paper is well cited and all citations are properly formatted (thanks $$\LaTeX$$!) Finally, most impressive perhaps is the fact that we didn't have Chat GPT in those days to write essays for us.
+Honestly - for a high-school project? Good effort. The code _works_ and has no
+memory leaks which is already more than I can say for some of my other projects.
+I even included a
+[Makefile](https://github.com/coenvalk/mastermind/blob/master/Makefile) and
+[MIT license](https://github.com/coenvalk/mastermind/blob/master/LICENSE)! The
+underlying math in the paper is correct, with a few small nit-picky inaccuracies
+which we will discuss later. The writing is mostly understandable, with perhaps
+a slight over reliance on complicated math jargon and notation to make the topic
+sound more advanced than it actually is. The paper is well cited and all
+citations are properly formatted (thanks $$\LaTeX$$!) Finally, most impressive
+perhaps is the fact that we didn't have Chat GPT in those days to write essays
+for us.
 
 ## The Bad
 
-Nevertheless, I come to bury me, not to praise me. There is a lot we can improve here.
+Nevertheless, I come to bury me, not to praise me. There is a lot we can improve
+here.
 
 ### The Math
 
-The math is a little jumbled. The explanations are wordy (hey - I had to hit that 2,000 word count somehow, right?) and the notation can be simplified. Just look at the difference between Knuth's overall explanation of minimax algorithm and mine:
+The math is a little jumbled. The explanations are wordy (hey - I had to hit
+that 2,000 word count somehow, right?) and the notation can be simplified. Just
+look at the difference between Knuth's overall explanation of minimax algorithm
+and mine:
 
-> Figure 1 was found by choosing at every stage a test pattern that *minimizes the maximum number of remaining possibilities* over all of the 15 responses by the codemaker.
+> Figure 1 was found by choosing at every stage a test pattern that _minimizes
+> the maximum number of remaining possibilities_ over all of the 15 responses by
+> the codemaker.
 >
 > &mdash; Donald Knuth, 1976
 
-In one sentence, Knuth accurately summarizes the algorithm used to find the next test pattern.
+In one sentence, Knuth accurately summarizes the algorithm used to find the next
+test pattern.
 
->  The best guess given a set S where the secret code is still an element is the code that the worst case response, the response that decreases S the least, is minimized.
+> The best guess given a set S where the secret code is still an element is the
+> code that the worst case response, the response that decreases S the least, is
+> minimized.
 >
 > &mdash; Coen Valk, 2016
 
-While it still boils down to a single sentence summary, mine is much more difficult to understand. It has unnecessary and confusing set theory jargon and the commas are in the wrong place. While I still have a nasty habit of being a bit too verbose, I've learned that understanding after a first reading is much more important than cramming a bunch of math on a page.
-
+While it still boils down to a single sentence summary, mine is much more
+difficult to understand. It has unnecessary and confusing set theory jargon and
+the commas are in the wrong place. While I still have a nasty habit of being a
+bit too verbose, I've learned that understanding after a first reading is much
+more important than cramming a bunch of math on a page.
 
 ### Memory Allocations
 
-After running the compiled program with Valgrind I was pleased to see that high school Coen had remembered to take care of all memory leaks! However, something else stood out to me in the heap summary:
+After running the compiled program with Valgrind I was pleased to see that high
+school Coen had remembered to take care of all memory leaks! However, something
+else stood out to me in the heap summary:
 
 ```
 ...
 Yay! I win!
-==16554== 
+==16554==
 ==16554== HEAP SUMMARY:
 ==16554==     in use at exit: 0 bytes in 0 blocks
 ==16554==   total heap usage: 874,095 allocs, 874,095 frees, 3,499,712 bytes allocated
-==16554== 
+==16554==
 ==16554== All heap blocks were freed -- no leaks are possible
-==16554== 
+==16554==
 ==16554== For lists of detected and suppressed errors, rerun with: -s
 ==16554== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 ```
 
-Nearly 900K heap allocations for a simple program like this seems pretty high. By far the largest number of heap allocations come from how I create codes on the fly rather than keep a full list of every possible code in memory at the same time. This is a useful pattern for when we want to play the game with a longer code or more possible colors, as the set of possible solutions grows exponentially in size. That does mean the `get_code()` function is called frequently in loops like this:
+Nearly 900K heap allocations for a simple program like this seems pretty high.
+By far the largest number of heap allocations come from how I create codes on
+the fly rather than keep a full list of every possible code in memory at the
+same time. This is a useful pattern for when we want to play the game with a
+longer code or more possible colors, as the set of possible solutions grows
+exponentially in size. That does mean the `get_code()` function is called
+frequently in loops like this:
 
 ```c
 unsigned char *get_code(int length, unsigned char colors, int index)
@@ -91,7 +149,8 @@ void print_all_guesses(bool *S, int n, int length, unsigned char colors)
 }
 ```
 
-In each loop iteration, I create and almost immediately free the `code` object. Instead, I could allocate space once and re-use the same object:
+In each loop iteration, I create and almost immediately free the `code` object.
+Instead, I could allocate space once and re-use the same object:
 
 ```c
 void get_code_inplace(int length, unsigned char colors, int index, unsigned char *code)
@@ -127,22 +186,28 @@ Now let's look at the number of memory allocations:
 ```
 ...
 Yay! I win!
-==18231== 
+==18231==
 ==18231== HEAP SUMMARY:
 ==18231==     in use at exit: 0 bytes in 0 blocks
 ==18231==   total heap usage: 3,851 allocs, 3,851 frees, 18,736 bytes allocated
-==18231== 
+==18231==
 ==18231== All heap blocks were freed -- no leaks are possible
-==18231== 
+==18231==
 ==18231== For lists of detected and suppressed errors, rerun with: -s
 ==18231== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 ```
 
-With a few small tweaks, we can reduce the number of memory allocations by two orders of magnitude.
+With a few small tweaks, we can reduce the number of memory allocations by two
+orders of magnitude.
 
 ### Performance
 
-Choosing the first move is a relatively large search space. My program brute force checks for each possible guess and feedback, the number of possible guesses would still be left. This ends up being $$ O\left( c^{2l} \cdot l^2 \right) $$ where c is the number of colors and l is the length of the code. There's a lot of duplicated work happening in `full_reduce()`, in which I compare the number of possible solutions that could match the feedback given:
+Choosing the first move is a relatively large search space. My program brute
+force checks for each possible guess and feedback, the number of possible
+guesses would still be left. This ends up being $$ O\left( c^{2l} \cdot l^2
+\right) $$ where c is the number of colors and l is the length of the code.
+There's a lot of duplicated work happening in `full_reduce()`, in which I
+compare the number of possible solutions that could match the feedback given:
 
 ```c
 int reduce(bool* S, unsigned char* now, int c, int p, int length, unsigned char colors, int n) {
@@ -177,7 +242,10 @@ int fullReduce(bool* S, unsigned char* now, int length, unsigned char colors, in
 }
 ```
 
-With this strategy I compare each code with every other code 13 times - one for each possible feedback response. I can instead compare all possible guesses and solutions with each other once and count up the amount of times a certain feedback is observed:
+With this strategy I compare each code with every other code 13 times - one for
+each possible feedback response. I can instead compare all possible guesses and
+solutions with each other once and count up the amount of times a certain
+feedback is observed:
 
 ```c
 int max_feedback_result(bool *solution_set, unsigned char *guess, int length, unsigned char colors)
@@ -213,7 +281,11 @@ int max_feedback_result(bool *solution_set, unsigned char *guess, int length, un
 }
 ```
 
-*This also makes the program extendable to longer lengths for free, because the feedback responses are no longer hard coded into the program! I remember racking my brain to try and find an algorithm to find the number of possible feedback values for any given length, and giving up after the code took too long to run at longer code lengths anyway.*
+_This also makes the program extendable to longer lengths for free, because the
+feedback responses are no longer hard coded into the program! I remember racking
+my brain to try and find an algorithm to find the number of possible feedback
+values for any given length, and giving up after the code took too long to run
+at longer code lengths anyway._
 
 this brings the run time down considerably:
 
@@ -221,11 +293,16 @@ this brings the run time down considerably:
 finding best move took 274 milliseconds
 ```
 
-There are likely further optimizations I can make, but for the purposes of this exercise I'm pleased with this speed up.
+There are likely further optimizations I can make, but for the purposes of this
+exercise I'm pleased with this speed up.
 
 ## The Ugly
 
-The most glaring ugliness is the function and variable naming. There is no case consistency at all. `snake_case`, `camelCase`, and `PascalCase` are all used interchangeably. Variables are frequently single letters, without a clear way to infer what they mean. Thankfully in modern IDEs this, as well as re-formatting the entire document, can be done automatically with little effort at all.
+The most glaring ugliness is the function and variable naming. There is no case
+consistency at all. `snake_case`, `camelCase`, and `PascalCase` are all used
+interchangeably. Variables are frequently single letters, without a clear way to
+infer what they mean. Thankfully in modern IDEs this, as well as re-formatting
+the entire document, can be done automatically with little effort at all.
 
 Let's take the `analyze()` function as an example of difficult to read code:
 
@@ -261,7 +338,10 @@ int *analyze(unsigned char *code, unsigned char *guess, int length, unsigned cha
 }
 ```
 
-Function and variable names are not descriptive, making the logic difficult to follow. While I'm not a "self-documenting" code expert, there's a lot we can change to make this more readable, as well as reduce more memory allocations by incorporating the same pattern as above:
+Function and variable names are not descriptive, making the logic difficult to
+follow. While I'm not a "self-documenting" code expert, there's a lot we can
+change to make this more readable, as well as reduce more memory allocations by
+incorporating the same pattern as above:
 
 ```c
 struct feedback {
@@ -304,14 +384,18 @@ void get_feedback(unsigned char *potential_solution, unsigned char *guess, int l
 
 ### Repeated work
 
-There are several areas in the code where I perform the same action multiple times. in the `main()` function I reduce the set of possible solutions twice in a row:
+There are several areas in the code where I perform the same action multiple
+times. in the `main()` function I reduce the set of possible solutions twice in
+a row:
 
 ```c
 newN = reduce(S, move, c, p, length, colors, n);
 SetReduce(S, move, c, p, length, colors, n);
 ```
 
-Now I only perform the `reduce()` operation once per turn while I still get all the information I need by returning the number of remaining candidates directly from `set_reduce()`
+Now I only perform the `reduce()` operation once per turn while I still get all
+the information I need by returning the number of remaining candidates directly
+from `set_reduce()`
 
 ```c
 remaining_candidates = set_reduce(solution_set, move, pegs_with_correct_color, pegs_in_correct_place, length, colors);
@@ -321,4 +405,8 @@ This makes the code easier to parse and reduces unnecessary extra work.
 
 ## Finally
 
-[The full diff is available on GitHub](https://github.com/coenvalk/mastermind/pull/1/files). After all is said and done, I greatly reduced the number of memory allocations, improved runtime performance, and made the code easier to read and understand with code comments and better naming. Looks like in the past 8 years I [learned a thing or two]({% link _pages/resume.md %}) after all!
+[The full diff is available on GitHub](https://github.com/coenvalk/mastermind/pull/1/files).
+After all is said and done, I greatly reduced the number of memory allocations,
+improved runtime performance, and made the code easier to read and understand
+with code comments and better naming. Looks like in the past 8 years I [learned
+a thing or two]({% link _pages/resume.md %}) after all!

@@ -3,7 +3,7 @@ subtitle: Software Engineer
 description: Coen Valk's personal blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://coenvalk.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  coenvalk
+github_username: coenvalk
 
 include: ["_pages"]
 
@@ -35,6 +35,7 @@ defaults:
       path: ""
       type: posts
     values:
+      image: /assets/images/blog.svg
       layout: single
       author_profile: true
       read_time: true
