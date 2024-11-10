@@ -29,6 +29,12 @@ teaser: /assets/images/blog.svg
 
 logo: /assets/images/masthead.png
 
+collections:
+  projects:
+    output: true
+    view: wide
+    permalink: /:collection/:path/
+
 defaults:
   # _posts
   - scope:
@@ -50,6 +56,14 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
 
 enable_copy_code_button: true
 
