@@ -97,7 +97,7 @@ After running the compiled program with Valgrind I was pleased to see that high
 school Coen had remembered to take care of all memory leaks! However, something
 else stood out to me in the heap summary:
 
-```
+```bash
 ...
 Yay! I win!
 ==16554==
@@ -153,7 +153,8 @@ In each loop iteration, I create and almost immediately free the `code` object.
 Instead, I could allocate space once and re-use the same object:
 
 ```c
-void get_code_inplace(int length, unsigned char colors, int index, unsigned char *code)
+void get_code_inplace(
+  int length, unsigned char colors, int index, unsigned char *code)
 {
   int i;
   for (i = 0; i < length; i++)
@@ -183,7 +184,7 @@ void print_all_guesses(bool *S, int n, int length, unsigned char colors)
 
 Now let's look at the number of memory allocations:
 
-```
+```bash
 ...
 Yay! I win!
 ==18231==
@@ -210,7 +211,15 @@ There's a lot of duplicated work happening in `full_reduce()`, in which I
 compare the number of possible solutions that could match the feedback given:
 
 ```c
-int reduce(bool* S, unsigned char* now, int c, int p, int length, unsigned char colors, int n) {
+int reduce(
+  bool* S,
+  unsigned char* now,
+  int c,
+  int p,
+  int length,
+  unsigned char colors,
+  int n
+) {
   int x = 0;
   int i;
   for (i = 0; i < n; i++) {
@@ -225,8 +234,22 @@ int reduce(bool* S, unsigned char* now, int c, int p, int length, unsigned char 
   return x;
 }
 
-int fullReduce(bool* S, unsigned char* now, int length, unsigned char colors, int n) {
-  int responses[13][2] = { {0, 0}, {1, 0}, {0, 1}, {2, 0}, {1, 1}, {0, 2}, {3, 0}, {2, 1}, {1, 2}, {0, 3}, {4, 0}, {3, 1}, {2, 2} };
+int fullReduce(
+  bool* S, unsigned char* now, int length, unsigned char colors, int n) {
+  int responses[13][2] = { 
+    {0, 0},
+    {1, 0},
+    {0, 1},
+    {2, 0},
+    {1, 1},
+    {0, 2},
+    {3, 0},
+    {2, 1},
+    {1, 2},
+    {0, 3},
+    {4, 0},
+    {3, 1},
+    {2, 2}};
   int x = 0;
   int index = 0;
   int i;
@@ -248,7 +271,8 @@ solutions with each other once and count up the amount of times a certain
 feedback is observed:
 
 ```c
-int max_feedback_result(bool *solution_set, unsigned char *guess, int length, unsigned char colors)
+int max_feedback_result(
+  bool *solution_set, unsigned char *guess, int length, unsigned char colors)
 {
   struct Feedback feedback;
   size_t *feedback_buckets = calloc(sizeof(size_t), length * length + 1);
@@ -289,7 +313,7 @@ at longer code lengths anyway._
 
 this brings the run time down considerably:
 
-```
+```bash
 finding best move took 274 milliseconds
 ```
 
@@ -307,7 +331,8 @@ the entire document, can be done automatically with little effort at all.
 Let's take the `analyze()` function as an example of difficult to read code:
 
 ```c
-int *analyze(unsigned char *code, unsigned char *guess, int length, unsigned char colors)
+int *analyze(
+  unsigned char *code, unsigned char *guess, int length, unsigned char colors)
 {
   int i;
   int c = 0;
@@ -351,7 +376,12 @@ struct feedback {
 
 ...
 
-void get_feedback(unsigned char *potential_solution, unsigned char *guess, int length, unsigned char colors, struct Feedback *out_feedback)
+void get_feedback(
+  unsigned char *potential_solution, 
+  unsigned char *guess, 
+  int length, 
+  unsigned char colors, 
+  struct Feedback *out_feedback)
 {
   int pegs_in_correct_place = 0;
   int pegs_with_correct_color = 0;
@@ -398,7 +428,14 @@ the information I need by returning the number of remaining candidates directly
 from `set_reduce()`
 
 ```c
-remaining_candidates = set_reduce(solution_set, move, pegs_with_correct_color, pegs_in_correct_place, length, colors);
+remaining_candidates = set_reduce(
+  solution_set,
+  move,
+  pegs_with_correct_color,
+  pegs_in_correct_place,
+  length,
+  colors
+);
 ```
 
 This makes the code easier to parse and reduces unnecessary extra work.

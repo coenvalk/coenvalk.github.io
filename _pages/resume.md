@@ -32,6 +32,7 @@ Dutch Native Speaker
 ### **Microsoft** (Redmond, Wa)
 
 #### Applied Data Scientist II, *12/15/2023 - Present*
+
 #### Applied Data Scientist, *03/01/2022 - 12/15/2023*
 
 - Develop, deploy, and maintain machine learning models to automatically detect financial fraud, service abuse, and hacked accounts on Azure; saving an estimated $200M monthly.
@@ -112,8 +113,8 @@ leadership at weekly service health meeting.
   - Ranked in top 15 hacks out of 53 submissions entered at HackRPI 2019 hackathon.
 - [Dyscalculia Test](https://dyscalculiatesting.com/)
   - Creating a math test that sends the user a comprehensive report in pdf form about the test taker’s math level. This project is finished and helps to give information about math deficiencies for people that cannot be tested in person. Follow-up assignment developing an admin panel for client to view statistics on all test takers. Languages used are Javascript, PHP, and MYSQLi. Other software libraries used include fpdf, p5.js, chart.js, and mathjax.
- - [ConductAR](https://github.com/coenvalk/conductAR)
-   - An exciting new in progress project that allows users to conduct infront of a webcam and have music played in real-time. The original idea was to create an interactive installation focusing on music therapy in retirement homes and music participation in museums. Other use cases include real-time conducting for small theatre productions. This project makes use of machine learning to connect hand motion to tempo and dynamics of the music.
+- [ConductAR](https://github.com/coenvalk/conductAR)
+  - An exciting new in progress project that allows users to conduct infront of a webcam and have music played in real-time. The original idea was to create an interactive installation focusing on music therapy in retirement homes and music participation in museums. Other use cases include real-time conducting for small theatre productions. This project makes use of machine learning to connect hand motion to tempo and dynamics of the music.
 - [Project Euler](https://projecteuler.net/)
 
   ![Project Euler](https://projecteuler.net/profile/coenvalk.png)
