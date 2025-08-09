@@ -5,9 +5,9 @@
 @charset "utf-8";
 
 @font-face {
-	font-family: "Intel One Mono";
-	src: url("/assets/fonts/IntelOneMono-Regular.woff2");
-};
+  font-family: "Intel One Mono";
+  src: url("/assets/fonts/IntelOneMono-Regular.woff2");
+}
 
 $sans-serif: "Atkinson Hyperlegible";
 $serif: "Atkinson Hyperlegible";
@@ -17,5 +17,5 @@ $monospace: "Intel One Mono";
 @import "minimal-mistakes"; // main partials
 
 .page__hero--overlay {
-	min-height: 50vh;
+  min-height: 50vh;
 }

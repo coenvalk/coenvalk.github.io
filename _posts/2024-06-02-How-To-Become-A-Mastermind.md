@@ -236,7 +236,7 @@ int reduce(
 
 int fullReduce(
   bool* S, unsigned char* now, int length, unsigned char colors, int n) {
-  int responses[13][2] = { 
+  int responses[13][2] = {
     {0, 0},
     {1, 0},
     {0, 1},
@@ -377,10 +377,10 @@ struct feedback {
 ...
 
 void get_feedback(
-  unsigned char *potential_solution, 
-  unsigned char *guess, 
-  int length, 
-  unsigned char colors, 
+  unsigned char *potential_solution,
+  unsigned char *guess,
+  int length,
+  unsigned char colors,
   struct Feedback *out_feedback)
 {
   int pegs_in_correct_place = 0;
