@@ -7,8 +7,9 @@ category: programming
 ---
 
 [Advent of Code](https://adventofcode.com/) is over, and Santa has successfully
-delivered all the presents. As explained in my previous post, I took the Advent
-of Code challenge to learn [Golang](https://go.dev/). Here are my initial
+delivered all the presents. As explained in my [previous
+post]({% link _posts/2025-11-30-Fine-Ill-Do-Advent-of-Code.md %}), I took the
+Advent of Code challenge to learn [Golang](https://go.dev/). Here are my initial
 thoughts from how I saved Christmas with my newfound Go programming skills.
 
 ## What I liked
