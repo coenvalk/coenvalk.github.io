@@ -14,13 +14,18 @@ Committed software engineer with a detailed approach to data analysis.
 ## Skills
 
 Python, Spark, SQL, C#, LightGBM, Machine Learning, TypeScript & Javascript,
-Scikit-learn, C++, Rust, TensorFlow, Power BI, Dutch Native Speaker
+React, Scikit-learn, C++, Rust, TensorFlow, Power BI, Dutch Native Speaker
 
 ## Professional Experience
 
 ### Amazon (Bellevue, WA)
 
 #### Software Engineer II, _08/11/2025 - Present_
+
+- Enhance short-term planning AI assistant with grounding, improving answer
+  quality related to delivery station labor schedules.
+- Expand short-term labor planning optimization planning application to EU
+  delivery stations.
 
 ### **Microsoft** (Redmond, WA)
 
